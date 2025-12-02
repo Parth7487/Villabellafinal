@@ -192,7 +192,7 @@ export default function About() {
               </div>
             </div>
             <div>
-              <p className="text-xs tracking-widest font-light text-emerald-400 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
                 {t("about.foundersLabel") || "Vårt team"}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-white mb-8">
