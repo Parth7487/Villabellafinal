@@ -24,7 +24,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.inspirationLabel") || "Inspirasjon"}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
@@ -72,7 +72,7 @@ export default function About() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.designLabel") || "Håndverk"}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
@@ -102,7 +102,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.qualityLabel") || "Kvalitet"}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
