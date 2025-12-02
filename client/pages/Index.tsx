@@ -12,6 +12,21 @@ export default function Index() {
   const [gdprAccepted, setGdprAccepted] = useState(false);
   const [subscriptionLoading, setSubscriptionLoading] = useState(false);
 
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!gdprAccepted) {
+      return;
+    }
+    setSubscriptionLoading(true);
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 500));
+      setEmail("");
+      setGdprAccepted(false);
+    } finally {
+      setSubscriptionLoading(false);
+    }
+  };
+
   return (
     <div className="bg-white">
       {/* Hero Section with Video Background */}
