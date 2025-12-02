@@ -37,8 +37,8 @@ export default function BundleSelector({
       <label
         className="flex items-start gap-4 p-6 border-2 rounded-lg cursor-pointer transition-all duration-300"
         style={{
-          borderColor: selectedOption === "cover" ? "#059669" : "#d4d4d8",
-          backgroundColor: selectedOption === "cover" ? "#f0fdf4" : "#ffffff",
+          borderColor: selectedOption === "cover" ? "#5c5c5c" : "#d4d4d8",
+          backgroundColor: selectedOption === "cover" ? "#f5f5f4" : "#ffffff",
         }}
       >
         <input
@@ -47,7 +47,7 @@ export default function BundleSelector({
           value="cover"
           checked={selectedOption === "cover"}
           onChange={() => handleSelectOption("cover")}
-          className="w-5 h-5 mt-1 accent-emerald-600"
+          className="w-5 h-5 mt-1 accent-stone-700"
         />
         <div className="flex-1">
           <p className="font-light text-stone-900">{t("bundle.coverOnly")}</p>
@@ -66,8 +66,8 @@ export default function BundleSelector({
       <label
         className="flex items-start gap-4 p-6 border-2 rounded-lg cursor-pointer transition-all duration-300 relative"
         style={{
-          borderColor: selectedOption === "bundle" ? "#059669" : "#d4d4d8",
-          backgroundColor: selectedOption === "bundle" ? "#f0fdf4" : "#ffffff",
+          borderColor: selectedOption === "bundle" ? "#5c5c5c" : "#d4d4d8",
+          backgroundColor: selectedOption === "bundle" ? "#f5f5f4" : "#ffffff",
         }}
       >
         {selectedOption === "bundle" && (
@@ -81,7 +81,7 @@ export default function BundleSelector({
           value="bundle"
           checked={selectedOption === "bundle"}
           onChange={() => handleSelectOption("bundle")}
-          className="w-5 h-5 mt-1 accent-emerald-600"
+          className="w-5 h-5 mt-1 accent-stone-700"
         />
         <div className="flex-1">
           <p className="font-light text-stone-900">{t("bundle.withPillow")}</p>
@@ -105,9 +105,9 @@ export default function BundleSelector({
           {t("bundle.multipleOffers")}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-4 border border-stone-200 rounded-lg hover:border-emerald-400 transition">
+          <div className="p-4 border border-stone-200 rounded-lg hover:border-stone-400 transition">
             <p className="font-light text-stone-900">{t("bundle.buy2")}</p>
-            <p className="text-2xl font-light text-emerald-700 mt-1">
+            <p className="text-2xl font-light text-stone-700 mt-1">
               {t("bundle.buy2Price")}
             </p>
             <p className="text-xs text-stone-500 font-light mt-2">
@@ -115,9 +115,9 @@ export default function BundleSelector({
             </p>
           </div>
 
-          <div className="p-4 border border-stone-200 rounded-lg hover:border-emerald-400 transition">
+          <div className="p-4 border border-stone-200 rounded-lg hover:border-stone-400 transition">
             <p className="font-light text-stone-900">{t("bundle.buy3")}</p>
-            <p className="text-2xl font-light text-emerald-700 mt-1">
+            <p className="text-2xl font-light text-stone-700 mt-1">
               {t("bundle.buy3Price")}
             </p>
             <p className="text-xs text-stone-500 font-light mt-2">

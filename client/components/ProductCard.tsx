@@ -101,7 +101,7 @@ export default function ProductCard({
         <span className="text-lg text-stone-900">{price}</span>
         <ArrowRight
           size={18}
-          className="text-emerald-700 group-hover:translate-x-1 transition"
+          className="text-stone-700 group-hover:translate-x-1 transition"
         />
       </div>
     </div>

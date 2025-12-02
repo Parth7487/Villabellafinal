@@ -24,7 +24,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.inspirationLabel") || "Inspirasjon"}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
@@ -45,7 +45,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-emerald-50 to-stone-50 rounded-lg p-8 sm:p-10 md:p-12 h-72 sm:h-80 md:h-96 flex items-center justify-center">
+            <div className="bg-gradient-to-br from-stone-100 to-stone-50 rounded-lg p-8 sm:p-10 md:p-12 h-72 sm:h-80 md:h-96 flex items-center justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fccad9fee65c147f9af5ac91d4f47801b?format=webp&width=800"
                 alt="Mediterranean inspiration"
@@ -72,7 +72,7 @@ export default function About() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.designLabel") || "Håndverk"}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
@@ -102,7 +102,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.qualityLabel") || "Kvalitet"}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
@@ -192,7 +192,7 @@ export default function About() {
               </div>
             </div>
             <div>
-              <p className="text-xs tracking-widest font-light text-emerald-400 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
                 {t("about.foundersLabel") || "Vårt team"}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-white mb-8">

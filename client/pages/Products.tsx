@@ -27,7 +27,7 @@ export default function Products() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-          <p className="text-xs tracking-widest font-light text-emerald-300 uppercase mb-4">
+          <p className="text-xs tracking-widest font-light text-stone-300 uppercase mb-4">
             {t("products.pageLabel")}
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight text-white mb-4">
@@ -65,7 +65,7 @@ export default function Products() {
                   description={product.subtitle}
                   price={formatPrice(product.basePrice)}
                   images={product.images}
-                  bgGradient="bg-gradient-to-br from-emerald-50 to-stone-50"
+                  bgGradient="bg-gradient-to-br from-stone-100 to-stone-50"
                 />
               </Link>
             ))}
@@ -78,7 +78,7 @@ export default function Products() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16 md:mb-20">
-            <p className="text-xs tracking-widest font-light text-emerald-400 uppercase mb-4">
+            <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
               {t("products.lifestyleLabel")}
             </p>
             <h2 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">
@@ -93,7 +93,7 @@ export default function Products() {
           <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
             {/* Image 1 - Rattan Chair */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fa823fb3706024cb6a456b310a63c139a?format=webp&width=800"
                   alt="VillaBella Cushion on Rattan Chair"
@@ -106,7 +106,7 @@ export default function Products() {
 
             {/* Image 2 - Beach Peacock */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F4596621349714abcbed19051e4a7e8f0?format=webp&width=800"
                   alt="VillaBella Cushion at Beach"
@@ -119,7 +119,7 @@ export default function Products() {
 
             {/* Image 3 - Tote Bag Detail */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fbba1f46d852146e5a6c2933c89fb6265?format=webp&width=800"
                   alt="VillaBella Tote Bag with Cushion"
@@ -132,7 +132,7 @@ export default function Products() {
 
             {/* Image 4 - Close-up Mosaic */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5892bc65aff14345aa9f1ab651180318?format=webp&width=800"
                   alt="Intricate Mosaic Design Detail"
@@ -145,7 +145,7 @@ export default function Products() {
 
             {/* Image 5 - Olive Branch Detail */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F49442462fd4642868154edba834d76e0?format=webp&width=800"
                   alt="Cushion with Olive Details"
@@ -158,7 +158,7 @@ export default function Products() {
 
             {/* Image 6 - Palm Tree Lifestyle */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fe912e6a28431429585f636dd9310093c?format=webp&width=800"
                   alt="VillaBella Tote Bag in Tropical Setting"
@@ -173,7 +173,7 @@ export default function Products() {
       </section>
 
       {/* Trust Bar - 4 Column Trust Indicator */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-stone-50 to-emerald-50/20 border-t border-emerald-100">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-stone-50 to-stone-100 border-t border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h3 className="text-2xl md:text-3xl font-light tracking-tight text-stone-900 mb-2">
@@ -187,8 +187,8 @@ export default function Products() {
             {/* Delivery */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <Truck className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Truck className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -202,8 +202,8 @@ export default function Products() {
             {/* Origin */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <Leaf className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Leaf className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -217,8 +217,8 @@ export default function Products() {
             {/* Returns */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <RotateCcw className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <RotateCcw className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -232,8 +232,8 @@ export default function Products() {
             {/* Norwegian Shop */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <CheckCircle className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <CheckCircle className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">

@@ -14,8 +14,8 @@ export default function TrustBar() {
         {/* Delivery */}
         <div className="flex gap-4">
           <div className="flex-shrink-0">
-            <div className="flex items-center justify-center h-10 w-10 rounded-full bg-emerald-50">
-              <Truck size={20} className="text-emerald-700" />
+            <div className="flex items-center justify-center h-10 w-10 rounded-full bg-stone-900 border border-stone-700">
+              <Truck size={20} className="text-stone-100" />
             </div>
           </div>
           <div>
@@ -31,8 +31,8 @@ export default function TrustBar() {
         {/* Returns */}
         <div className="flex gap-4">
           <div className="flex-shrink-0">
-            <div className="flex items-center justify-center h-10 w-10 rounded-full bg-emerald-50">
-              <RotateCcw size={20} className="text-emerald-700" />
+            <div className="flex items-center justify-center h-10 w-10 rounded-full bg-stone-900 border border-stone-700">
+              <RotateCcw size={20} className="text-stone-100" />
             </div>
           </div>
           <div>
@@ -48,8 +48,8 @@ export default function TrustBar() {
         {/* Secure Payment */}
         <div className="flex gap-4">
           <div className="flex-shrink-0">
-            <div className="flex items-center justify-center h-10 w-10 rounded-full bg-emerald-50">
-              <Lock size={20} className="text-emerald-700" />
+            <div className="flex items-center justify-center h-10 w-10 rounded-full bg-stone-900 border border-stone-700">
+              <Lock size={20} className="text-stone-100" />
             </div>
           </div>
           <div>
