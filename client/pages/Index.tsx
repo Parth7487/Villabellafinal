@@ -151,6 +151,101 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Trust Badges Section */}
+      <section className="py-16 bg-stone-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Badge 1 */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Leaf className="text-stone-100" size={28} />
+                </div>
+              </div>
+              <h4 className="text-stone-900 font-light text-lg">
+                {t("trust.madeInEurope")}
+              </h4>
+              <p className="text-stone-600 text-sm font-light">
+                {t("trust.madeInEuropeDesc")}
+              </p>
+            </div>
+
+            {/* Badge 2 */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Truck className="text-stone-100" size={28} />
+                </div>
+              </div>
+              <h4 className="text-stone-900 font-light text-lg">
+                {t("trust.delivery")}
+              </h4>
+              <p className="text-stone-600 text-sm font-light">
+                {t("trust.deliveryDesc")}
+              </p>
+            </div>
+
+            {/* Badge 3 */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <RotateCcw className="text-stone-100" size={28} />
+                </div>
+              </div>
+              <h4 className="text-stone-900 font-light text-lg">
+                {t("trust.returns")}
+              </h4>
+              <p className="text-stone-600 text-sm font-light">
+                {t("trust.returnsDesc")}
+              </p>
+            </div>
+
+            {/* Badge 4 */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <CheckCircle className="text-stone-100" size={28} />
+                </div>
+              </div>
+              <h4 className="text-stone-900 font-light text-lg">
+                {t("trust.norwegianShop")}
+              </h4>
+              <p className="text-stone-600 text-sm font-light">
+                {t("trust.norwegianShopDesc")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* VillaBella Statement Section - Mediterranean Elegance */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left content */}
+            <div className="space-y-8 order-last lg:order-first">
+              <h1 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight">
+                VillaBella – fordi hjemmet ditt fortjener mer enn minimalisme.
+              </h1>
+              <p className="text-lg text-stone-600 font-light leading-relaxed">
+                I en verden dominert av minimalistisk estetikk, inviterer VillaBella deg til å søke etter det ekstra. Vi tror at et vakkert hjem forteller historier, vekker følelser, og reflekterer dine drømmer. Våre håndlagde mosaikkputer er en invitasjon til det varme, solrike og kulturelt rike livet ved Middelhavet.
+              </p>
+            </div>
+
+            {/* Right image - Mediterranean landscape */}
+            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full min-h-80 rounded-lg overflow-hidden shadow-2xl border border-stone-200">
+              <img
+                src="https://images.pexels.com/photos/11898897/pexels-photo-11898897.jpeg"
+                alt="Mediterranean coastline with calm sea and rocky cliffs"
+                className="w-full h-full object-cover"
+                width="800"
+                height="600"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Artist Feature (Designet av Jelena) */}
       <section className="py-20 md:py-32 bg-stone-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
