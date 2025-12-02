@@ -237,27 +237,75 @@ export default function Index() {
         </div>
       </section>
 
-      {/* VillaBella Statement Section - Mediterranean Elegance */}
+      {/* Mediterranean Dream + Newsletter Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left content */}
-            <div className="space-y-8 order-last lg:order-first">
-              <h1 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight">
-                VillaBella – fordi hjemmet ditt fortjener mer enn minimalisme.
-              </h1>
-              <p className="text-lg text-stone-600 font-light leading-relaxed">
-                I en verden dominert av minimalistisk estetikk, inviterer
-                VillaBella deg til å søke etter det ekstra. Vi tror at et
-                vakkert hjem forteller historier, vekker følelser, og
-                reflekterer dine drømmer. Våre håndlagde mosaikkputer er en
-                invitasjon til det varme, solrike og kulturelt rike livet ved
-                Middelhavet.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left content - Mediterranean Dream */}
+            <div className="space-y-10 order-last lg:order-first">
+              <div>
+                <h2 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight mb-6">
+                  VillaBella – fordi hjemmet ditt fortjener mer enn minimalisme.
+                </h2>
+                <p className="text-lg text-stone-600 font-light leading-relaxed">
+                  I en verden dominert av minimalistisk estetikk, inviterer
+                  VillaBella deg til å søke etter det ekstra. Vi tror at et
+                  vakkert hjem forteller historier, vekker følelser, og
+                  reflekterer dine drømmer. Våre håndlagde mosaikkputer er en
+                  invitasjon til det varme, solrike og kulturelt rike livet ved
+                  Middelhavet.
+                </p>
+              </div>
+
+              {/* Newsletter Form */}
+              <div className="space-y-6 pt-6 border-t border-stone-200">
+                <div>
+                  <h3 className="text-2xl font-light text-stone-900 mb-2">
+                    {t("newsletter.heading")}
+                  </h3>
+                  <p className="text-sm text-stone-600 font-light">
+                    Bli en del av vår mediterrane sirkel og motta eksklusive tilbud.
+                  </p>
+                </div>
+
+                <form onSubmit={handleNewsletterSubmit} className="space-y-4">
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder={t("newsletter.placeholder")}
+                      required
+                      className="flex-1 px-6 py-4 bg-stone-50 border border-stone-300 text-stone-900 placeholder-stone-500 rounded-sm text-sm focus:outline-none focus:ring-2 focus:ring-stone-400 focus:border-transparent transition"
+                    />
+                    <button
+                      type="submit"
+                      disabled={!gdprAccepted || subscriptionLoading}
+                      className="px-10 py-4 bg-stone-900 hover:bg-stone-800 disabled:bg-stone-400 text-white font-light uppercase tracking-wider text-sm transition duration-300 rounded-sm"
+                    >
+                      {subscriptionLoading ? "..." : t("newsletter.subscribe")}
+                    </button>
+                  </div>
+
+                  {/* GDPR Compliance Checkbox */}
+                  <div className="flex items-start gap-3 pt-2">
+                    <input
+                      type="checkbox"
+                      id="gdpr"
+                      checked={gdprAccepted}
+                      onChange={(e) => setGdprAccepted(e.target.checked)}
+                      className="w-5 h-5 mt-0.5 bg-white border border-stone-300 rounded cursor-pointer accent-stone-900 flex-shrink-0"
+                    />
+                    <label htmlFor="gdpr" className="text-xs text-stone-600 font-light cursor-pointer">
+                      {t("newsletter.gdprDescription")}
+                    </label>
+                  </div>
+                </form>
+              </div>
             </div>
 
             {/* Right image - Mediterranean landscape */}
-            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full min-h-80 rounded-lg overflow-hidden shadow-2xl border border-stone-200">
+            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full min-h-96 rounded-lg overflow-hidden shadow-2xl border border-stone-200">
               <img
                 src="https://images.pexels.com/photos/11898897/pexels-photo-11898897.jpeg"
                 alt="Mediterranean coastline with calm sea and rocky cliffs"
