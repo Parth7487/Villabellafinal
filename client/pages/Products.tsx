@@ -65,7 +65,7 @@ export default function Products() {
                   description={product.subtitle}
                   price={formatPrice(product.basePrice)}
                   images={product.images}
-                  bgGradient="bg-gradient-to-br from-emerald-50 to-stone-50"
+                  bgGradient="bg-gradient-to-br from-stone-100 to-stone-50"
                 />
               </Link>
             ))}
@@ -78,7 +78,7 @@ export default function Products() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16 md:mb-20">
-            <p className="text-xs tracking-widest font-light text-emerald-400 uppercase mb-4">
+            <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
               {t("products.lifestyleLabel")}
             </p>
             <h2 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">
@@ -93,7 +93,7 @@ export default function Products() {
           <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
             {/* Image 1 - Rattan Chair */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fa823fb3706024cb6a456b310a63c139a?format=webp&width=800"
                   alt="VillaBella Cushion on Rattan Chair"
@@ -106,7 +106,7 @@ export default function Products() {
 
             {/* Image 2 - Beach Peacock */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F4596621349714abcbed19051e4a7e8f0?format=webp&width=800"
                   alt="VillaBella Cushion at Beach"
@@ -119,7 +119,7 @@ export default function Products() {
 
             {/* Image 3 - Tote Bag Detail */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fbba1f46d852146e5a6c2933c89fb6265?format=webp&width=800"
                   alt="VillaBella Tote Bag with Cushion"
@@ -132,7 +132,7 @@ export default function Products() {
 
             {/* Image 4 - Close-up Mosaic */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5892bc65aff14345aa9f1ab651180318?format=webp&width=800"
                   alt="Intricate Mosaic Design Detail"
@@ -145,7 +145,7 @@ export default function Products() {
 
             {/* Image 5 - Olive Branch Detail */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F49442462fd4642868154edba834d76e0?format=webp&width=800"
                   alt="Cushion with Olive Details"
@@ -158,7 +158,7 @@ export default function Products() {
 
             {/* Image 6 - Palm Tree Lifestyle */}
             <div className="break-inside-avoid">
-              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-emerald-900/30 transition duration-500">
+              <div className="overflow-hidden rounded-lg shadow-2xl hover:shadow-stone-900/30 transition duration-500">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fe912e6a28431429585f636dd9310093c?format=webp&width=800"
                   alt="VillaBella Tote Bag in Tropical Setting"
