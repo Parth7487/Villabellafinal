@@ -175,7 +175,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
               <button
                 className={`transition-all duration-300 hidden sm:flex items-center justify-center p-2 rounded-full hover:scale-110 ${
                   shouldShowHeader
-                    ? "text-stone-700 hover:text-emerald-700 hover:bg-emerald-50"
+                    ? "text-stone-700 hover:text-stone-900 hover:bg-stone-100"
                     : "text-white/70 hover:text-white hover:bg-white/10"
                 }`}
                 aria-label="Search"
@@ -185,7 +185,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
               <button
                 className={`transition-all duration-300 hidden sm:flex items-center justify-center p-2 rounded-full hover:scale-110 ${
                   shouldShowHeader
-                    ? "text-stone-700 hover:text-emerald-700 hover:bg-emerald-50"
+                    ? "text-stone-700 hover:text-stone-900 hover:bg-stone-100"
                     : "text-white/70 hover:text-white hover:bg-white/10"
                 }`}
                 aria-label="Wishlist"
@@ -195,7 +195,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
               <button
                 className={`transition-all duration-300 relative flex items-center justify-center p-2 rounded-full hover:scale-110 ${
                   shouldShowHeader
-                    ? "text-stone-700 hover:text-emerald-700 hover:bg-emerald-50"
+                    ? "text-stone-700 hover:text-stone-900 hover:bg-stone-100"
                     : "text-white/70 hover:text-white hover:bg-white/10"
                 }`}
                 aria-label="Shopping bag"
@@ -213,7 +213,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
               <button
                 className={`transition-all duration-300 hidden sm:flex items-center justify-center p-2 rounded-full hover:scale-110 ${
                   shouldShowHeader
-                    ? "text-stone-700 hover:text-emerald-700 hover:bg-emerald-50"
+                    ? "text-stone-700 hover:text-stone-900 hover:bg-stone-100"
                     : "text-white/70 hover:text-white hover:bg-white/10"
                 }`}
                 aria-label="User account"
@@ -252,7 +252,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
                 {/* Animated background */}
                 <span
                   className={`absolute inset-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out ${
-                    shouldShowHeader ? "bg-emerald-100" : "bg-white/10"
+                    shouldShowHeader ? "bg-stone-100" : "bg-white/10"
                   }`}
                 ></span>
 
@@ -260,7 +260,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
                 <span className="relative block">{item.label}</span>
 
                 {/* Bottom border animation */}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-600 to-emerald-500 group-hover:w-full transition-all duration-500 ease-out"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-stone-600 to-stone-500 group-hover:w-full transition-all duration-500 ease-out"></span>
               </Link>
             ))}
           </nav>
@@ -281,7 +281,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`block font-light text-sm uppercase tracking-wide py-2 sm:py-3 px-4 transition-all duration-300 rounded hover:pl-5 sm:hover:pl-6 ${
                     shouldShowHeader
-                      ? "text-stone-700 hover:text-emerald-700 hover:bg-emerald-50"
+                      ? "text-stone-700 hover:text-stone-900 hover:bg-stone-100"
                       : "text-white/80 hover:text-white hover:bg-white/10"
                   }`}
                 >
