@@ -8,6 +8,9 @@ import { useState } from "react";
 export default function Index() {
   const { t } = useLanguage();
   const { formatPrice } = useCurrency();
+  const [email, setEmail] = useState("");
+  const [gdprAccepted, setGdprAccepted] = useState(false);
+  const [subscriptionLoading, setSubscriptionLoading] = useState(false);
 
   return (
     <div className="bg-white">
