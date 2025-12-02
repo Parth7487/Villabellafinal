@@ -173,7 +173,7 @@ export default function Products() {
       </section>
 
       {/* Trust Bar - 4 Column Trust Indicator */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-stone-50 to-emerald-50/20 border-t border-emerald-100">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-stone-50 to-stone-100 border-t border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h3 className="text-2xl md:text-3xl font-light tracking-tight text-stone-900 mb-2">
@@ -187,8 +187,8 @@ export default function Products() {
             {/* Delivery */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <Truck className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Truck className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -202,8 +202,8 @@ export default function Products() {
             {/* Origin */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <Leaf className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Leaf className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -217,8 +217,8 @@ export default function Products() {
             {/* Returns */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <RotateCcw className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <RotateCcw className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -232,8 +232,8 @@ export default function Products() {
             {/* Norwegian Shop */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <CheckCircle className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <CheckCircle className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
