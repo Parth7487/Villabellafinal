@@ -130,34 +130,22 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 text-sm text-stone-400">
               <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-stone-300 transition"
-                >
+                <Link to="/contact" className="hover:text-stone-300 transition">
                   {t("footer.contact")}
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-stone-300 transition"
-                >
+                <Link to="/contact" className="hover:text-stone-300 transition">
                   {t("footer.shippingReturns")}
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-stone-300 transition"
-                >
+                <Link to="/contact" className="hover:text-stone-300 transition">
                   {t("footer.faq")}
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-stone-300 transition"
-                >
+                <Link to="/contact" className="hover:text-stone-300 transition">
                   {t("footer.careGuide")}
                 </Link>
               </li>
@@ -178,10 +166,7 @@ const Footer = () => {
                 <span>+47 950 00 000</span>
               </li>
               <li className="flex items-start gap-3">
-                <Mail
-                  size={16}
-                  className="mt-1 flex-shrink-0 text-stone-600"
-                />
+                <Mail size={16} className="mt-1 flex-shrink-0 text-stone-600" />
                 <span>hello@villabella.no</span>
               </li>
               <li className="flex items-start gap-3">

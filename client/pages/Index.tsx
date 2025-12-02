@@ -361,11 +361,44 @@ export default function Index() {
             preserveAspectRatio="xMidYMid slice"
           >
             <defs>
-              <pattern id="mosaic-pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-                <rect x="0" y="0" width="60" height="60" fill="none" stroke="currentColor" strokeWidth="1" className="text-stone-500" />
-                <circle cx="30" cy="30" r="8" fill="currentColor" className="text-stone-400" />
-                <path d="M 15 30 Q 30 20, 45 30" stroke="currentColor" strokeWidth="1" fill="none" className="text-stone-400" />
-                <path d="M 30 15 L 30 45" stroke="currentColor" strokeWidth="0.5" className="text-stone-400" />
+              <pattern
+                id="mosaic-pattern"
+                x="0"
+                y="0"
+                width="60"
+                height="60"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="60"
+                  height="60"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  className="text-stone-500"
+                />
+                <circle
+                  cx="30"
+                  cy="30"
+                  r="8"
+                  fill="currentColor"
+                  className="text-stone-400"
+                />
+                <path
+                  d="M 15 30 Q 30 20, 45 30"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  fill="none"
+                  className="text-stone-400"
+                />
+                <path
+                  d="M 30 15 L 30 45"
+                  stroke="currentColor"
+                  strokeWidth="0.5"
+                  className="text-stone-400"
+                />
               </pattern>
             </defs>
             <rect width="1200" height="400" fill="url(#mosaic-pattern)" />
