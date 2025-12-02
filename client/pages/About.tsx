@@ -7,12 +7,12 @@ export default function About() {
   return (
     <div className="bg-white">
       {/* Page Header / Hero Section */}
-      <section className="py-20 md:py-32 bg-white border-b border-stone-200">
+      <section className="py-20 md:py-32 bg-stone-900 border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-6xl md:text-7xl font-light tracking-tight text-stone-900 mb-6 leading-tight">
+          <h1 className="text-6xl md:text-7xl font-light tracking-tight text-white mb-6 leading-tight">
             {t("about.headerTitle") || "Et ønske om å bringe syden hjem"}
           </h1>
-          <p className="text-lg text-stone-600 font-light max-w-3xl mx-auto">
+          <p className="text-lg text-stone-300 font-light max-w-3xl mx-auto">
             {t("about.headerSubtitle") ||
               "En reise som startet med en drøm om å beholde følelsen av Middelhavet hele året"}
           </p>
