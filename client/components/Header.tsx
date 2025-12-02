@@ -39,7 +39,6 @@ const Header = ({ showAlways = false }: HeaderProps) => {
     { label: "Home", href: "/" },
     { label: "Products", href: "/products" },
     { label: "About us", href: "/about" },
-    { label: "Your idea", href: "/contact" },
     { label: "Contact", href: "/contact" },
   ];
 
