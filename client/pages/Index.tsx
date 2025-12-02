@@ -30,16 +30,16 @@ export default function Index() {
         {/* Overlay gradient for readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/30 via-stone-900/50 to-stone-950/70"></div>
 
-        {/* CTA Button - Premium Elegant Design */}
+        {/* CTA Button - Premium Elegant Design - Larger */}
         <div className="relative z-10 mt-auto">
           <Link
             to="/products"
-            className="group inline-flex px-12 py-4 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-xs transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-emerald-900/30"
+            className="group inline-flex px-16 py-5 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-sm transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-stone-900/30"
           >
-            <span className="flex items-center gap-3">
+            <span className="flex items-center gap-4">
               {t("hero.cta")}
               <svg
-                className="w-4 h-4 group-hover:translate-x-1 transition duration-300"
+                className="w-5 h-5 group-hover:translate-x-1 transition duration-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -53,55 +53,6 @@ export default function Index() {
               </svg>
             </span>
           </Link>
-        </div>
-      </section>
-
-      {/* Brand Story (Inspirasjonen) Section */}
-      <section className="py-20 md:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left content */}
-            <div className="space-y-8">
-              <div>
-                <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
-                  {t("inspiration.label")}
-                </p>
-                <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-6">
-                  {t("inspiration.heading")}
-                </h2>
-              </div>
-
-              <p className="text-lg text-stone-700 font-light leading-relaxed">
-                {t("inspiration.intro")}
-              </p>
-
-              <p className="text-base text-stone-600 font-light leading-relaxed">
-                {t("inspiration.p1")}
-              </p>
-
-              <p className="text-base text-stone-600 font-light leading-relaxed">
-                {t("inspiration.p2")}
-              </p>
-
-              <Link
-                to="/"
-                className="inline-flex items-center gap-3 text-stone-700 hover:text-stone-900 font-light uppercase tracking-wider text-sm transition mt-4"
-              >
-                {t("inspiration.cta")} <ArrowRight size={16} />
-              </Link>
-            </div>
-
-            {/* Right image */}
-            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full min-h-64 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F83530be78c404f29af883193b335d2ad%2F4e40ed096b984588ae3b46b80840b803?format=webp&width=800"
-                alt="Mediterranean landscape garden with fountain"
-                className="w-full h-full object-cover"
-                width="800"
-                height="600"
-              />
-            </div>
-          </div>
         </div>
       </section>
 
