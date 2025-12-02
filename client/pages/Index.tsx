@@ -53,7 +53,7 @@ export default function Index() {
         <div className="relative z-10 mt-auto">
           <Link
             to="/products"
-            className="group inline-flex px-16 py-5 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-sm transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-stone-900/30"
+            className="group inline-flex px-20 py-6 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-sm transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-stone-900/30"
           >
             <span className="flex items-center gap-4">
               {t("hero.cta")}
