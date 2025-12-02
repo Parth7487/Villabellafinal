@@ -72,13 +72,13 @@
     --primary: 20 9% 92%;
     --primary-foreground: 20 7% 10%;
 
-    --secondary: 151 71% 44%;
+    --secondary: 20 5% 35%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 20 8% 30%;
     --muted-foreground: 20 8% 70%;
 
-    --accent: 151 71% 44%;
+    --accent: 20 5% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 10 75% 50%;
@@ -86,7 +86,7 @@
 
     --border: 20 8% 25%;
     --input: 20 8% 20%;
-    --ring: 151 71% 44%;
+    --ring: 20 5% 35%;
     --sidebar-background: 20 7% 12%;
     --sidebar-foreground: 20 9% 88%;
     --sidebar-primary: 151 71% 44%;
