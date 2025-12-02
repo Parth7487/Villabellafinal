@@ -253,7 +253,7 @@ const Footer = () => {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba3f4bd2002c4d26822c396fc3c66d31%2F49cb9620668644b095cd0cfbe9bd3d1e?format=webp&width=800"
                 alt="VillaBella Logo"
-                className="h-32 sm:h-48 md:h-96 lg:h-[512px] object-contain opacity-90 hover:opacity-100 transition duration-300"
+                className="h-20 sm:h-32 md:h-48 lg:h-64 object-contain opacity-90 hover:opacity-100 transition duration-300"
               />
             </div>
           </div>
