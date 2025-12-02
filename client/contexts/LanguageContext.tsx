@@ -248,6 +248,9 @@ const translations: Record<Language, Record<string, string>> = {
     "about.ctaText":
       "Utforsk vår samling av håndlagde putehyller og oppdag hvordan du kan bringe Middelhavet inn i ditt hjem.",
     "about.ctaButton": "Utforsk kolleksjonen",
+    "newsletter.gdprLabel": "Jeg godtar vilkårene og personvernreglementene",
+    "newsletter.gdprDescription": "Ved å abonnere godtar du våre vilkår og samtykker til å motta nyhetsbrev.",
+    "newsletter.termsLink": "Les våre vilkår",
   },
   EN: {
     "banner.text":
@@ -486,6 +489,9 @@ const translations: Record<Language, Record<string, string>> = {
     "about.ctaText":
       "Explore our collection of handcrafted pillow covers and discover how you can bring the Mediterranean into your home.",
     "about.ctaButton": "Explore the Collection",
+    "newsletter.gdprLabel": "I accept the terms and privacy policy",
+    "newsletter.gdprDescription": "By subscribing, you accept our terms and agree to receive newsletters.",
+    "newsletter.termsLink": "Read our terms",
   },
 };
 
