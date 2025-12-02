@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import ProductCard from "@/components/ProductCard";
+import { useState } from "react";
 
 export default function Index() {
   const { t } = useLanguage();
