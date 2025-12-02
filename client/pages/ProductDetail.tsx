@@ -83,7 +83,7 @@ export default function ProductDetail() {
                   onClick={() => setCurrentImageIndex(idx)}
                   className={`aspect-square rounded-lg overflow-hidden transition border-2 ${
                     idx === currentImageIndex
-                      ? "border-emerald-700"
+                      ? "border-stone-700"
                       : "border-stone-200 hover:border-stone-400"
                   }`}
                 >
@@ -103,7 +103,7 @@ export default function ProductDetail() {
           <div className="space-y-8">
             {/* Product Header */}
             <div className="space-y-4">
-              <p className="text-xs tracking-widest font-light text-emerald-700 uppercase">
+              <p className="text-xs tracking-widest font-light text-stone-600 uppercase">
                 {product.collection}
               </p>
               <h1 className="text-4xl md:text-5xl font-light tracking-tight text-stone-900">
@@ -226,7 +226,7 @@ export default function ProductDetail() {
                     description={relatedProduct.subtitle}
                     price={formatPrice(relatedProduct.basePrice)}
                     images={relatedProduct.images}
-                    bgGradient="bg-gradient-to-br from-emerald-50 to-stone-50"
+                    bgGradient="bg-gradient-to-br from-stone-100 to-stone-50"
                   />
                 </Link>
               ))}
