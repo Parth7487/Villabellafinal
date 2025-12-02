@@ -206,7 +206,7 @@ export default function ProductDetail() {
         <section className="py-20 md:py-32 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-12">
-              <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-4">
+              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
                 {t("product.relatedProducts")}
               </p>
               <h2 className="text-5xl font-light tracking-tight text-stone-900">

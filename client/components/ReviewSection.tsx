@@ -83,7 +83,7 @@ export default function ReviewSection({ productId }: ReviewSectionProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
-          <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-4">
+          <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
             {t("review.title")}
           </p>
           <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-4">

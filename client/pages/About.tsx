@@ -7,12 +7,12 @@ export default function About() {
   return (
     <div className="bg-white">
       {/* Page Header / Hero Section */}
-      <section className="py-20 md:py-32 bg-white border-b border-stone-200">
+      <section className="py-20 md:py-32 bg-stone-900 border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-6xl md:text-7xl font-light tracking-tight text-stone-900 mb-6 leading-tight">
+          <h1 className="text-6xl md:text-7xl font-light tracking-tight text-white mb-6 leading-tight">
             {t("about.headerTitle") || "Et ønske om å bringe syden hjem"}
           </h1>
-          <p className="text-lg text-stone-600 font-light max-w-3xl mx-auto">
+          <p className="text-lg text-stone-300 font-light max-w-3xl mx-auto">
             {t("about.headerSubtitle") ||
               "En reise som startet med en drøm om å beholde følelsen av Middelhavet hele året"}
           </p>
@@ -45,7 +45,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-stone-100 to-stone-50 rounded-lg p-8 sm:p-10 md:p-12 h-72 sm:h-80 md:h-96 flex items-center justify-center">
+            <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fccad9fee65c147f9af5ac91d4f47801b?format=webp&width=800"
                 alt="Mediterranean inspiration"
@@ -62,7 +62,7 @@ export default function About() {
       <section className="py-20 md:py-32 bg-stone-50 border-y border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="bg-white rounded-lg p-8 sm:p-10 md:p-12 h-72 sm:h-80 md:h-96 flex items-center justify-center order-2 lg:order-1">
+            <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden order-2 lg:order-1">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5e67c3514401438ab8d1e2feefdc3fd6?format=webp&width=800"
                 alt="Our designs"
@@ -163,7 +163,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-stone-50 to-emerald-50 rounded-lg p-8 sm:p-10 md:p-12 h-72 sm:h-80 md:h-96 flex items-center justify-center">
+            <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fbc5a0f02c5e64f4ba7ba111ba39f80ef?format=webp&width=800"
                 alt="Quality craftsmanship"
@@ -181,7 +181,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="bg-stone-800 rounded-lg h-72 sm:h-80 md:h-96 flex items-center justify-center overflow-hidden">
+              <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F02bee4e14e5f402294ea66f7cefe585e?format=webp&width=800"
                   alt="Founders Ola and Milad"
@@ -240,7 +240,7 @@ export default function About() {
           </p>
           <Link
             to="/products"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-700 hover:bg-emerald-800 text-white font-light uppercase tracking-wider text-sm rounded-sm transition duration-300"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-stone-800 hover:bg-stone-900 text-white font-light uppercase tracking-wider text-sm rounded-sm transition duration-300"
           >
             {t("about.ctaButton") || "Utforsk kolleksjonen"}
             <svg

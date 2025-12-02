@@ -13,7 +13,7 @@ export default function Index() {
       {/* Hero Section with Video Background */}
       <section className="relative w-screen h-screen bg-stone-900 overflow-hidden flex flex-col items-center justify-between pb-20">
         {/* Video background - with fallback */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950 via-stone-900 to-stone-950"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950"></div>
         <video
           autoPlay
           muted
@@ -28,18 +28,18 @@ export default function Index() {
           />
         </video>
         {/* Overlay gradient for readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/30 via-stone-900/50 to-stone-950/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-950/30 via-stone-900/50 to-stone-950/70"></div>
 
-        {/* CTA Button - Premium Elegant Design */}
+        {/* CTA Button - Premium Elegant Design - Larger */}
         <div className="relative z-10 mt-auto">
           <Link
             to="/products"
-            className="group inline-flex px-12 py-4 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-xs transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-emerald-900/30"
+            className="group inline-flex px-16 py-5 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-sm transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-stone-900/30"
           >
-            <span className="flex items-center gap-3">
+            <span className="flex items-center gap-4">
               {t("hero.cta")}
               <svg
-                className="w-4 h-4 group-hover:translate-x-1 transition duration-300"
+                className="w-5 h-5 group-hover:translate-x-1 transition duration-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -53,55 +53,6 @@ export default function Index() {
               </svg>
             </span>
           </Link>
-        </div>
-      </section>
-
-      {/* Brand Story (Inspirasjonen) Section */}
-      <section className="py-20 md:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left content */}
-            <div className="space-y-8">
-              <div>
-                <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
-                  {t("inspiration.label")}
-                </p>
-                <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-6">
-                  {t("inspiration.heading")}
-                </h2>
-              </div>
-
-              <p className="text-lg text-stone-700 font-light leading-relaxed">
-                {t("inspiration.intro")}
-              </p>
-
-              <p className="text-base text-stone-600 font-light leading-relaxed">
-                {t("inspiration.p1")}
-              </p>
-
-              <p className="text-base text-stone-600 font-light leading-relaxed">
-                {t("inspiration.p2")}
-              </p>
-
-              <Link
-                to="/"
-                className="inline-flex items-center gap-3 text-stone-700 hover:text-stone-900 font-light uppercase tracking-wider text-sm transition mt-4"
-              >
-                {t("inspiration.cta")} <ArrowRight size={16} />
-              </Link>
-            </div>
-
-            {/* Right image */}
-            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full min-h-64 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F83530be78c404f29af883193b335d2ad%2F4e40ed096b984588ae3b46b80840b803?format=webp&width=800"
-                alt="Mediterranean landscape garden with fountain"
-                className="w-full h-full object-cover"
-                width="800"
-                height="600"
-              />
-            </div>
-          </div>
         </div>
       </section>
 
@@ -200,61 +151,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Artist Feature (Designet av Jelena) */}
-      <section className="py-20 md:py-32 bg-stone-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Image */}
-            <div className="order-last lg:order-first">
-              <div className="relative w-full h-72 sm:h-80 md:h-96 lg:h-[700px] overflow-hidden shadow-lg bg-black flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba3f4bd2002c4d26822c396fc3c66d31%2F681f21f8ea574ef690553b20ef9eda65?format=webp&width=800"
-                  alt="Jelena Zivkovic, mosaic artist"
-                  className="w-full h-full object-cover"
-                  width="800"
-                  height="700"
-                />
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="space-y-8">
-              <div>
-                <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
-                  {t("artist.label")}
-                </p>
-                <h2 className="text-5xl font-light tracking-tight text-white">
-                  {t("artist.heading")}
-                </h2>
-              </div>
-
-              <p className="text-lg text-stone-300 font-light leading-relaxed">
-                {t("artist.p1")}
-              </p>
-
-              <p className="text-base text-stone-400 font-light leading-relaxed">
-                {t("artist.p2")}
-              </p>
-
-              <blockquote className="border-l-4 border-stone-700 pl-6 py-6 italic text-stone-300 font-light text-lg">
-                "{t("artist.quote")}"
-              </blockquote>
-
-              <p className="text-sm text-stone-400 font-light">
-                — Jelena Zivkovic, Mosaic Artist
-              </p>
-
-              <Link
-                to="/"
-                className="inline-flex items-center gap-3 text-stone-400 hover:text-stone-300 font-light uppercase tracking-wider text-sm transition mt-4"
-              >
-                {t("artist.cta")} <ArrowRight size={16} />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Trust Badges Section */}
       <section className="py-16 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -317,6 +213,94 @@ export default function Index() {
               <p className="text-stone-600 text-sm font-light">
                 {t("trust.norwegianShopDesc")}
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* VillaBella Statement Section - Mediterranean Elegance */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left content */}
+            <div className="space-y-8 order-last lg:order-first">
+              <h1 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight">
+                VillaBella – fordi hjemmet ditt fortjener mer enn minimalisme.
+              </h1>
+              <p className="text-lg text-stone-600 font-light leading-relaxed">
+                I en verden dominert av minimalistisk estetikk, inviterer
+                VillaBella deg til å søke etter det ekstra. Vi tror at et
+                vakkert hjem forteller historier, vekker følelser, og
+                reflekterer dine drømmer. Våre håndlagde mosaikkputer er en
+                invitasjon til det varme, solrike og kulturelt rike livet ved
+                Middelhavet.
+              </p>
+            </div>
+
+            {/* Right image - Mediterranean landscape */}
+            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full min-h-80 rounded-lg overflow-hidden shadow-2xl border border-stone-200">
+              <img
+                src="https://images.pexels.com/photos/11898897/pexels-photo-11898897.jpeg"
+                alt="Mediterranean coastline with calm sea and rocky cliffs"
+                className="w-full h-full object-cover"
+                width="800"
+                height="600"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Artist Feature (Designet av Jelena) */}
+      <section className="py-20 md:py-32 bg-stone-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Image */}
+            <div className="order-last lg:order-first">
+              <div className="relative w-full h-72 sm:h-80 md:h-96 lg:h-[700px] overflow-hidden shadow-lg bg-black flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba3f4bd2002c4d26822c396fc3c66d31%2F681f21f8ea574ef690553b20ef9eda65?format=webp&width=800"
+                  alt="Jelena Zivkovic, mosaic artist"
+                  className="w-full h-full object-cover"
+                  width="800"
+                  height="700"
+                />
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="space-y-8">
+              <div>
+                <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
+                  {t("artist.label")}
+                </p>
+                <h2 className="text-5xl font-light tracking-tight text-white">
+                  {t("artist.heading")}
+                </h2>
+              </div>
+
+              <p className="text-lg text-stone-300 font-light leading-relaxed">
+                {t("artist.p1")}
+              </p>
+
+              <p className="text-base text-stone-400 font-light leading-relaxed">
+                {t("artist.p2")}
+              </p>
+
+              <blockquote className="border-l-4 border-stone-700 pl-6 py-6 italic text-stone-300 font-light text-lg">
+                "{t("artist.quote")}"
+              </blockquote>
+
+              <p className="text-sm text-stone-400 font-light">
+                — Jelena Zivkovic, Mosaic Artist
+              </p>
+
+              <Link
+                to="/"
+                className="inline-flex items-center gap-3 text-stone-400 hover:text-stone-300 font-light uppercase tracking-wider text-sm transition mt-4"
+              >
+                {t("artist.cta")} <ArrowRight size={16} />
+              </Link>
             </div>
           </div>
         </div>
