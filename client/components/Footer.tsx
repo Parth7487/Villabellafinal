@@ -62,7 +62,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/products"
-                  className="hover:text-emerald-400 transition"
+                  className="hover:text-stone-300 transition"
                 >
                   {t("footer.allCollections")}
                 </Link>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/products"
-                  className="hover:text-emerald-400 transition"
+                  className="hover:text-stone-300 transition"
                 >
                   {t("footer.newArrivals")}
                 </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/products"
-                  className="hover:text-emerald-400 transition"
+                  className="hover:text-stone-300 transition"
                 >
                   {t("footer.bestsellers")}
                 </Link>
@@ -86,7 +86,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/products"
-                  className="hover:text-emerald-400 transition"
+                  className="hover:text-stone-300 transition"
                 >
                   {t("footer.bundleOffers")}
                 </Link>
@@ -101,22 +101,22 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 text-sm text-stone-400">
               <li>
-                <Link to="/about" className="hover:text-emerald-400 transition">
+                <Link to="/about" className="hover:text-stone-300 transition">
                   {t("footer.aboutUs")}
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-emerald-400 transition">
+                <Link to="/about" className="hover:text-stone-300 transition">
                   {t("footer.sustainability")}
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-emerald-400 transition">
+                <Link to="/about" className="hover:text-stone-300 transition">
                   {t("footer.journal")}
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-emerald-400 transition">
+                <Link to="/about" className="hover:text-stone-300 transition">
                   {t("footer.careers")}
                 </Link>
               </li>
@@ -132,7 +132,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-emerald-400 transition"
+                  className="hover:text-stone-300 transition"
                 >
                   {t("footer.contact")}
                 </Link>
@@ -140,7 +140,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-emerald-400 transition"
+                  className="hover:text-stone-300 transition"
                 >
                   {t("footer.shippingReturns")}
                 </Link>
@@ -148,7 +148,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-emerald-400 transition"
+                  className="hover:text-stone-300 transition"
                 >
                   {t("footer.faq")}
                 </Link>
@@ -156,7 +156,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-emerald-400 transition"
+                  className="hover:text-stone-300 transition"
                 >
                   {t("footer.careGuide")}
                 </Link>
@@ -203,7 +203,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-500 hover:text-emerald-400 transition duration-300"
+                className="text-stone-500 hover:text-stone-300 transition duration-300"
               >
                 <Instagram size={20} />
               </a>
@@ -211,7 +211,7 @@ const Footer = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-500 hover:text-emerald-400 transition duration-300"
+                className="text-stone-500 hover:text-stone-300 transition duration-300"
               >
                 <Facebook size={20} />
               </a>
@@ -219,7 +219,7 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-500 hover:text-emerald-400 transition duration-300"
+                className="text-stone-500 hover:text-stone-300 transition duration-300"
               >
                 <Linkedin size={20} />
               </a>
@@ -250,13 +250,13 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-6 text-sm text-stone-500">
-              <a href="#privacy" className="hover:text-emerald-400 transition">
+              <a href="#privacy" className="hover:text-stone-300 transition">
                 {t("footer.privacy")}
               </a>
-              <a href="#terms" className="hover:text-emerald-400 transition">
+              <a href="#terms" className="hover:text-stone-300 transition">
                 {t("footer.terms")}
               </a>
-              <a href="#cookies" className="hover:text-emerald-400 transition">
+              <a href="#cookies" className="hover:text-stone-300 transition">
                 {t("footer.cookies")}
               </a>
             </div>
@@ -282,7 +282,7 @@ const Footer = () => {
               href="https://shopifydevstudio.tech"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-emerald-600 hover:text-emerald-400 transition duration-300 underline"
+              className="text-emerald-600 hover:text-stone-300 transition duration-300 underline"
             >
               Shopifydevstudio.tech
             </a>
