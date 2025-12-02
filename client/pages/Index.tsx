@@ -338,7 +338,7 @@ export default function Index() {
             {/* Content */}
             <div className="space-y-8">
               <div>
-                <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
+                <p className="text-xs tracking-widest font-light text-white uppercase mb-4">
                   {t("artist.label")}
                 </p>
                 <h2 className="text-5xl font-light tracking-tight text-white">
