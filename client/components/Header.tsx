@@ -57,7 +57,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
       <div
         className={`text-center py-2 text-xs font-light tracking-wide transition-all duration-300 ${
           shouldShowHeader
-            ? "bg-gradient-to-r from-emerald-50/80 to-stone-50/80 text-stone-600"
+            ? "bg-gradient-to-r from-stone-100/80 to-stone-50/80 text-stone-600"
             : "bg-white/0 text-white/60"
         }`}
       >
@@ -89,7 +89,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
                     className={`transition-all duration-300 px-2 sm:px-3 py-1 sm:py-2 text-xs font-light uppercase tracking-wider ${
                       language === "NO"
                         ? shouldShowHeader
-                          ? "text-emerald-700"
+                          ? "text-stone-900"
                           : "text-white"
                         : shouldShowHeader
                           ? "text-stone-400 hover:text-stone-700"
@@ -110,7 +110,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
                     className={`transition-all duration-300 px-2 sm:px-3 py-1 sm:py-2 text-xs font-light uppercase tracking-wider ${
                       language === "EN"
                         ? shouldShowHeader
-                          ? "text-emerald-700"
+                          ? "text-stone-900"
                           : "text-white"
                         : shouldShowHeader
                           ? "text-stone-400 hover:text-stone-700"
