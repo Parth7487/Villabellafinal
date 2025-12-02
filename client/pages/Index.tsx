@@ -13,7 +13,7 @@ export default function Index() {
       {/* Hero Section with Video Background */}
       <section className="relative w-screen h-screen bg-stone-900 overflow-hidden flex flex-col items-center justify-between pb-20">
         {/* Video background - with fallback */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950 via-stone-900 to-stone-950"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950"></div>
         <video
           autoPlay
           muted
@@ -28,7 +28,7 @@ export default function Index() {
           />
         </video>
         {/* Overlay gradient for readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/30 via-stone-900/50 to-stone-950/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-950/30 via-stone-900/50 to-stone-950/70"></div>
 
         {/* CTA Button - Premium Elegant Design - Larger */}
         <div className="relative z-10 mt-auto">
