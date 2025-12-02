@@ -51,8 +51,8 @@ export default function Contact() {
               {/* Email */}
               <div>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center">
-                    <Mail size={24} className="text-emerald-700" />
+                  <div className="w-12 h-12 bg-stone-900 border border-stone-700 rounded-full flex items-center justify-center">
+                    <Mail size={24} className="text-stone-100" />
                   </div>
                   <h3 className="text-lg font-light text-stone-900">
                     {t("contact.email") || "Email"}
@@ -70,8 +70,8 @@ export default function Contact() {
               {/* Phone */}
               <div>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center">
-                    <Phone size={24} className="text-emerald-700" />
+                  <div className="w-12 h-12 bg-stone-900 border border-stone-700 rounded-full flex items-center justify-center">
+                    <Phone size={24} className="text-stone-100" />
                   </div>
                   <h3 className="text-lg font-light text-stone-900">
                     {t("contact.phone") || "Phone"}
@@ -88,8 +88,8 @@ export default function Contact() {
               {/* Address */}
               <div>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center">
-                    <MapPin size={24} className="text-emerald-700" />
+                  <div className="w-12 h-12 bg-stone-900 border border-stone-700 rounded-full flex items-center justify-center">
+                    <MapPin size={24} className="text-stone-100" />
                   </div>
                   <h3 className="text-lg font-light text-stone-900">
                     {t("contact.address") || "Address"}
