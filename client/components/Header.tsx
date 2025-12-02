@@ -132,7 +132,7 @@ const Header = ({ showAlways = false }: HeaderProps) => {
                     onChange={(e) => setCurrency(e.target.value as any)}
                     className={`transition-all duration-300 px-2 sm:px-3 py-1 sm:py-2 text-xs font-light uppercase tracking-wider bg-transparent border-0 focus:outline-none cursor-pointer ${
                       shouldShowHeader
-                        ? "text-stone-700 hover:text-emerald-700"
+                        ? "text-stone-700 hover:text-stone-900"
                         : "text-white/60 hover:text-white"
                     }`}
                   >
