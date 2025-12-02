@@ -262,8 +262,8 @@ export default function Index() {
             {/* Badge 1 */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <Leaf className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Leaf className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -277,8 +277,8 @@ export default function Index() {
             {/* Badge 2 */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <Truck className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Truck className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -292,8 +292,8 @@ export default function Index() {
             {/* Badge 3 */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <RotateCcw className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <RotateCcw className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
@@ -307,8 +307,8 @@ export default function Index() {
             {/* Badge 4 */}
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center">
-                  <CheckCircle className="text-emerald-700" size={28} />
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <CheckCircle className="text-stone-100" size={28} />
                 </div>
               </div>
               <h4 className="text-stone-900 font-light text-lg">
