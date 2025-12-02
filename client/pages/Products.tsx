@@ -27,7 +27,7 @@ export default function Products() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-          <p className="text-xs tracking-widest font-light text-emerald-300 uppercase mb-4">
+          <p className="text-xs tracking-widest font-light text-stone-300 uppercase mb-4">
             {t("products.pageLabel")}
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight text-white mb-4">
