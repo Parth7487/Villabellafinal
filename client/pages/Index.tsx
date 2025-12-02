@@ -135,7 +135,7 @@ export default function Index() {
                   "https://cdn.builder.io/api/v1/image/assets%2Fba3f4bd2002c4d26822c396fc3c66d31%2Fb3a5da4389604f86804763b12edac687?format=webp&width=800",
                   "https://cdn.builder.io/api/v1/image/assets%2Fba3f4bd2002c4d26822c396fc3c66d31%2F8794fb9299944d8fb22f836d8a1d9ff5?format=webp&width=800",
                 ]}
-                bgGradient="bg-gradient-to-br from-emerald-50 to-stone-50"
+                bgGradient="bg-gradient-to-br from-stone-100 to-stone-50"
               />
             </Link>
 
