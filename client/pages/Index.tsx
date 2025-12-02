@@ -63,7 +63,7 @@ export default function Index() {
             {/* Left content */}
             <div className="space-y-8">
               <div>
-                <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-4">
+                <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
                   {t("inspiration.label")}
                 </p>
                 <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-6">
@@ -85,7 +85,7 @@ export default function Index() {
 
               <Link
                 to="/"
-                className="inline-flex items-center gap-3 text-emerald-700 hover:text-emerald-800 font-light uppercase tracking-wider text-sm transition mt-4"
+                className="inline-flex items-center gap-3 text-stone-700 hover:text-stone-900 font-light uppercase tracking-wider text-sm transition mt-4"
               >
                 {t("inspiration.cta")} <ArrowRight size={16} />
               </Link>
@@ -109,7 +109,7 @@ export default function Index() {
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-4">
+            <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
               {t("riviera.label")}
             </p>
             <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-6">
@@ -177,8 +177,8 @@ export default function Index() {
           </div>
 
           {/* Bundle Offer Callout */}
-          <div className="bg-gradient-to-r from-emerald-50 to-stone-50 rounded-lg p-12 text-center border border-emerald-100">
-            <p className="text-xs tracking-widest font-light text-emerald-700 uppercase mb-4">
+          <div className="bg-gradient-to-r from-stone-100 to-stone-50 rounded-lg p-12 text-center border border-stone-200">
+            <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
               Special Offer
             </p>
             <h3 className="text-3xl font-light text-stone-900 mb-4">
@@ -192,7 +192,7 @@ export default function Index() {
             </p>
             <Link
               to="/products"
-              className="inline-flex items-center gap-3 px-12 py-3.5 bg-emerald-700 hover:bg-emerald-800 text-white font-light uppercase tracking-widest text-xs rounded-sm shadow-lg hover:shadow-xl hover:shadow-emerald-700/50 transition duration-300 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-3 px-12 py-3.5 bg-stone-800 hover:bg-stone-900 text-white font-light uppercase tracking-widest text-xs rounded-sm shadow-lg hover:shadow-xl hover:shadow-stone-800/50 transition duration-300 hover:-translate-y-0.5"
             >
               {t("riviera.shop")} <ArrowRight size={16} />
             </Link>
@@ -220,7 +220,7 @@ export default function Index() {
             {/* Content */}
             <div className="space-y-8">
               <div>
-                <p className="text-xs tracking-widest font-light text-emerald-400 uppercase mb-4">
+                <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
                   {t("artist.label")}
                 </p>
                 <h2 className="text-5xl font-light tracking-tight text-white">
@@ -236,7 +236,7 @@ export default function Index() {
                 {t("artist.p2")}
               </p>
 
-              <blockquote className="border-l-4 border-emerald-500 pl-6 py-6 italic text-stone-300 font-light text-lg">
+              <blockquote className="border-l-4 border-stone-700 pl-6 py-6 italic text-stone-300 font-light text-lg">
                 "{t("artist.quote")}"
               </blockquote>
 
@@ -246,7 +246,7 @@ export default function Index() {
 
               <Link
                 to="/"
-                className="inline-flex items-center gap-3 text-emerald-400 hover:text-emerald-300 font-light uppercase tracking-wider text-sm transition mt-4"
+                className="inline-flex items-center gap-3 text-stone-400 hover:text-stone-300 font-light uppercase tracking-wider text-sm transition mt-4"
               >
                 {t("artist.cta")} <ArrowRight size={16} />
               </Link>
@@ -325,7 +325,7 @@ export default function Index() {
       {/* Call to Action Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-stone-900 to-stone-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs tracking-widest font-light text-emerald-400 uppercase mb-6">
+          <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
             {t("cta.heading")}
           </p>
           <h2 className="text-5xl md:text-6xl font-light tracking-tight text-white mb-8">
@@ -337,13 +337,13 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to="/products"
-              className="px-10 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
+              className="px-10 py-4 bg-stone-800 hover:bg-stone-900 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
             >
               {t("cta.shop")}
             </Link>
             <Link
               to="/about"
-              className="px-10 py-4 border border-stone-700 hover:border-emerald-600 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
+              className="px-10 py-4 border border-stone-700 hover:border-stone-400 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
             >
               {t("cta.learn")}
             </Link>
