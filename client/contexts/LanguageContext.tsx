@@ -39,7 +39,7 @@ const translations: Record<Language, Record<string, string>> = {
       "Velg med eller uten innerpute fra norsk dun — legg til ekstra komfort eller spar med bare putehyllen.",
     "riviera.shop": "Kjøp Kolleksjonen",
     "artist.label": "Designet av Jelena",
-    "artist.heading": "Et ekstraordinært samarbeid",
+    "artist.heading": "Møt kunstneren",
     "artist.p1":
       "VillaBella er dypt inspirert av den tidløse kvaliteten som mosaikker utstråler. Det er derfor vi har fått hjelp fra Jelena Zivkovic, en dyktig mosaikkkünstner.",
     "artist.p2":
@@ -278,7 +278,7 @@ const translations: Record<Language, Record<string, string>> = {
       "Choose with or without inner pillow from Norwegian Dun — add extra comfort or save with our cushion covers only option.",
     "riviera.shop": "Shop the Collection",
     "artist.label": "Artist Collaboration",
-    "artist.heading": "An Extraordinary Collaboration",
+    "artist.heading": "Meet the Artist",
     "artist.p1":
       "VillaBella is deeply inspired by the timeless quality that mosaics radiate. That's why we have received help from Jelena Zivkovic, a skilled mosaic artist.",
     "artist.p2":
