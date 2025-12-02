@@ -45,7 +45,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-emerald-50 to-stone-50 rounded-lg p-8 sm:p-10 md:p-12 h-72 sm:h-80 md:h-96 flex items-center justify-center">
+            <div className="bg-gradient-to-br from-stone-100 to-stone-50 rounded-lg p-8 sm:p-10 md:p-12 h-72 sm:h-80 md:h-96 flex items-center justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fccad9fee65c147f9af5ac91d4f47801b?format=webp&width=800"
                 alt="Mediterranean inspiration"
