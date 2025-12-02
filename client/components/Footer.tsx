@@ -173,21 +173,21 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone
                   size={16}
-                  className="mt-1 flex-shrink-0 text-emerald-600"
+                  className="mt-1 flex-shrink-0 text-stone-600"
                 />
                 <span>+47 950 00 000</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail
                   size={16}
-                  className="mt-1 flex-shrink-0 text-emerald-600"
+                  className="mt-1 flex-shrink-0 text-stone-600"
                 />
                 <span>hello@villabella.no</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin
                   size={16}
-                  className="mt-1 flex-shrink-0 text-emerald-600"
+                  className="mt-1 flex-shrink-0 text-stone-600"
                 />
                 <span>Oslo, Norway</span>
               </li>
@@ -282,7 +282,7 @@ const Footer = () => {
               href="https://shopifydevstudio.tech"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-emerald-600 hover:text-stone-300 transition duration-300 underline"
+              className="text-stone-600 hover:text-stone-300 transition duration-300 underline"
             >
               Shopifydevstudio.tech
             </a>
