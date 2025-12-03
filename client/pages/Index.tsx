@@ -247,7 +247,7 @@ export default function Index() {
                 <h2 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight mb-6">
                   {t("mediterranean.heading")}
                 </h2>
-                <p className="text-lg text-stone-600 font-light leading-relaxed">
+                <p className="text-[1.44rem] text-stone-700 font-semibold leading-relaxed py-6">
                   {t("mediterranean.description")}
                 </p>
               </div>
