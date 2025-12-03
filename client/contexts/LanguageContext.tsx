@@ -255,6 +255,10 @@ const translations: Record<Language, Record<string, string>> = {
   EN: {
     "banner.text":
       "Handpicked Mediterranean designs • Hand-packed with care • Made in Europe",
+    "nav.home": "Home",
+    "nav.products": "Products",
+    "nav.about": "About us",
+    "nav.contact": "Contact",
     "inspiration.label": "Our Inspiration",
     "inspiration.heading": "Bringing Syden Home",
     "inspiration.intro":
