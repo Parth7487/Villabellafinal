@@ -43,6 +43,10 @@ const translations: Record<Language, Record<string, string>> = {
       "Velg med eller uten innerpute fra norsk dun — legg til ekstra komfort eller spar med bare putehyllen.",
     "riviera.shop": "Kjøp Kolleksjonen",
     "riviera.specialLabel": "Spesialtilbud",
+    "mediterranean.heading": "VillaBella – fordi hjemmet ditt fortjener mer enn minimalisme.",
+    "mediterranean.description":
+      "I en verden dominert av minimalistisk estetikk, inviterer VillaBella deg til å søke etter det ekstra. Vi tror at et vakkert hjem forteller historier, vekker følelser, og reflekterer dine drømmer. Våre håndlagde mosaikkputer er en invitasjon til det varme, solrike og kulturelt rike livet ved Middelhavet.",
+    "mediterranean.newsletterSubheading": "Bli en del av vår mediterrane sirkel og motta eksklusive tilbud.",
     "artist.label": "Designet av Jelena",
     "artist.heading": "Møt kunstneren",
     "artist.p1":
@@ -287,6 +291,10 @@ const translations: Record<Language, Record<string, string>> = {
       "Choose with or without inner pillow from Norwegian Dun — add extra comfort or save with our cushion covers only option.",
     "riviera.shop": "Shop the Collection",
     "riviera.specialLabel": "Special Offer",
+    "mediterranean.heading": "VillaBella – because your home deserves more than minimalism.",
+    "mediterranean.description":
+      "In a world dominated by minimalist aesthetics, VillaBella invites you to seek the extraordinary. We believe that a beautiful home tells stories, awakens emotions, and reflects your dreams. Our handcrafted mosaic cushions are an invitation to the warm, sun-filled, and culturally rich life of the Mediterranean.",
+    "mediterranean.newsletterSubheading": "Join our Mediterranean circle and receive exclusive offers.",
     "artist.label": "Artist Collaboration",
     "artist.heading": "Meet the Artist",
     "artist.p1":
