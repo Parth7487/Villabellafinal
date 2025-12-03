@@ -16,6 +16,10 @@ const translations: Record<Language, Record<string, string>> = {
   NO: {
     "banner.text":
       "Håndplukket mediterrane design • Håndpakket med omhu • Laget i Europa",
+    "nav.home": "Hjem",
+    "nav.products": "Produkter",
+    "nav.about": "Om oss",
+    "nav.contact": "Kontakt",
     "inspiration.label": "Inspirasjonen",
     "inspiration.heading": "Inspirasjonen",
     "inspiration.intro":
