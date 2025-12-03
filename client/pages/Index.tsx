@@ -362,7 +362,7 @@ export default function Index() {
                 luminous atmosphere."
               </blockquote>
 
-              <p className="text-sm text-stone-400 font-light">
+              <p className="text-[1.01rem] text-stone-500 font-semibold">
                 — Jelena Zivkovic, Mosaic Artist
               </p>
 
