@@ -152,6 +152,12 @@ export default {
         "6xl": "4.25rem",
         "7xl": "5rem",
       },
+      fontWeight: {
+        light: "400",
+        normal: "500",
+        semibold: "600",
+        bold: "700",
+      },
       keyframes: {
         "accordion-down": {
           from: {
