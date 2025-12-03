@@ -291,7 +291,10 @@ export default function Index() {
                       onChange={(e) => setGdprAccepted(e.target.checked)}
                       className="w-5 h-5 mt-0.5 bg-white border border-stone-300 rounded cursor-pointer accent-stone-900 flex-shrink-0"
                     />
-                    <label htmlFor="gdpr" className="text-xs text-stone-600 font-light cursor-pointer">
+                    <label
+                      htmlFor="gdpr"
+                      className="text-xs text-stone-600 font-light cursor-pointer"
+                    >
                       {t("newsletter.gdprDescription")}
                     </label>
                   </div>
@@ -350,7 +353,13 @@ export default function Index() {
               </p>
 
               <blockquote className="border-l-4 border-stone-700 pl-6 py-6 italic text-stone-300 font-light text-lg">
-                "This collection grew from my lifelong love of mosaic storytelling and the warm, symbolic world of Mediterranean art. As an artist shaped by both traditional iconography and imaginative painting, I am inspired by symbols that reveal themselves slowly. In these pieces, I wanted to capture timelessness, where myth, nature, and memory blend into a calm, luminous atmosphere."
+                "This collection grew from my lifelong love of mosaic
+                storytelling and the warm, symbolic world of Mediterranean art.
+                As an artist shaped by both traditional iconography and
+                imaginative painting, I am inspired by symbols that reveal
+                themselves slowly. In these pieces, I wanted to capture
+                timelessness, where myth, nature, and memory blend into a calm,
+                luminous atmosphere."
               </blockquote>
 
               <p className="text-sm text-stone-400 font-light">
@@ -396,7 +405,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }
