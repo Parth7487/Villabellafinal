@@ -217,7 +217,7 @@ export default function ReviewSection({ productId }: ReviewSectionProps) {
                   </div>
 
                   {/* Review Body */}
-                  <p className="text-stone-700 font-light leading-relaxed mb-4">
+                  <p className="text-[1.15rem] text-stone-800 font-semibold leading-relaxed mb-4 py-3">
                     {review.text}
                   </p>
 
