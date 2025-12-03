@@ -84,7 +84,7 @@ export default function Products() {
             <h2 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">
               {t("products.lifestyleHeading")}
             </h2>
-            <p className="text-lg text-stone-300 font-light max-w-2xl mx-auto">
+            <p className="text-[1.44rem] text-stone-400 font-semibold py-6 leading-relaxed max-w-2xl mx-auto">
               {t("products.lifestyleDescription")}
             </p>
           </div>
