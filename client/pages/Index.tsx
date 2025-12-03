@@ -259,7 +259,7 @@ export default function Index() {
                     {t("newsletter.heading")}
                   </h3>
                   <p className="text-sm text-stone-600 font-light">
-                    Bli en del av vår mediterrane sirkel og motta eksklusive tilbud.
+                    {t("mediterranean.newsletterSubheading")}
                   </p>
                 </div>
 
