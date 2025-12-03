@@ -35,7 +35,7 @@ export default function Contact() {
           <h1 className="text-5xl md:text-6xl font-light tracking-tight text-white mb-6">
             {t("contact.title") || "Get in Touch"}
           </h1>
-          <p className="text-lg text-stone-300 font-light max-w-2xl mx-auto">
+          <p className="text-[1.44rem] text-stone-400 font-semibold py-6 leading-relaxed max-w-2xl mx-auto">
             {t("contact.subtitle") ||
               "We'd love to hear from you. Reach out to us with any questions or inquiries."}
           </p>
@@ -61,7 +61,7 @@ export default function Contact() {
                 <p className="text-stone-600 font-light ml-16">
                   hello@villabella.no
                 </p>
-                <p className="text-sm text-stone-500 font-light ml-16 mt-1">
+                <p className="text-[1.01rem] text-stone-600 font-semibold ml-16 mt-1">
                   {t("contact.emailResponse") ||
                     "We'll respond within 24 hours"}
                 </p>
@@ -80,7 +80,7 @@ export default function Contact() {
                 <p className="text-stone-600 font-light ml-16">
                   +47 99 99 99 99
                 </p>
-                <p className="text-sm text-stone-500 font-light ml-16 mt-1">
+                <p className="text-[1.01rem] text-stone-600 font-semibold ml-16 mt-1">
                   {t("contact.phoneHours") || "Monday - Friday, 10am - 6pm CET"}
                 </p>
               </div>
@@ -209,7 +209,7 @@ export default function Contact() {
               <h3 className="text-lg font-light text-stone-900 mb-3">
                 {t("contact.faq1Q") || "How long does shipping take?"}
               </h3>
-              <p className="text-stone-600 font-light leading-relaxed">
+              <p className="text-[1.15rem] text-stone-700 font-semibold leading-relaxed">
                 {t("contact.faq1A") ||
                   "We offer 3-5 day delivery from our warehouse in Norway to most locations in Scandinavia and Europe."}
               </p>
@@ -220,7 +220,7 @@ export default function Contact() {
               <h3 className="text-lg font-light text-stone-900 mb-3">
                 {t("contact.faq2Q") || "What is your return policy?"}
               </h3>
-              <p className="text-stone-600 font-light leading-relaxed">
+              <p className="text-[1.15rem] text-stone-700 font-semibold leading-relaxed">
                 {t("contact.faq2A") ||
                   "We offer a 14-day open purchase guarantee. If you're not completely satisfied, you can return your purchase for a full refund."}
               </p>
@@ -231,7 +231,7 @@ export default function Contact() {
               <h3 className="text-lg font-light text-stone-900 mb-3">
                 {t("contact.faq3Q") || "Do you ship internationally?"}
               </h3>
-              <p className="text-stone-600 font-light leading-relaxed">
+              <p className="text-[1.15rem] text-stone-700 font-semibold leading-relaxed">
                 {t("contact.faq3A") ||
                   "Yes, we ship to select countries across Europe. Contact us for shipping rates and options for your location."}
               </p>
@@ -242,7 +242,7 @@ export default function Contact() {
               <h3 className="text-lg font-light text-stone-900 mb-3">
                 {t("contact.faq4Q") || "Can I customize my order?"}
               </h3>
-              <p className="text-stone-600 font-light leading-relaxed">
+              <p className="text-[1.15rem] text-stone-700 font-semibold leading-relaxed">
                 {t("contact.faq4A") ||
                   "We offer limited customization options. Please contact us directly to discuss your specific needs and requirements."}
               </p>

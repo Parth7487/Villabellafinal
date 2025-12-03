@@ -25,7 +25,7 @@ const Footer = () => {
               <h3 className="text-2xl font-light tracking-wide mb-4">
                 {t("footer.newsletter")}
               </h3>
-              <p className="text-stone-400 mb-6 text-sm leading-relaxed">
+              <p className="text-stone-300 mb-6 text-[1.15rem] font-semibold leading-relaxed">
                 {t("footer.newsletterDesc")}
               </p>
             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
             <h4 className="font-light text-sm uppercase tracking-wider mb-6 text-stone-100">
               {t("footer.brand")}
             </h4>
-            <p className="text-stone-400 text-sm leading-relaxed mb-4">
+            <p className="text-stone-300 text-[1.01rem] font-semibold leading-relaxed mb-4">
               {t("footer.brandDesc")}
             </p>
           </div>

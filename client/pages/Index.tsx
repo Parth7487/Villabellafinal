@@ -85,7 +85,7 @@ export default function Index() {
             <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-6">
               {t("riviera.heading")}
             </h2>
-            <p className="text-lg text-stone-600 font-light max-w-2xl mx-auto">
+            <p className="text-[1.44rem] text-stone-700 font-semibold py-6 leading-relaxed max-w-2xl mx-auto">
               {t("riviera.description")}
             </p>
           </div>
@@ -247,7 +247,7 @@ export default function Index() {
                 <h2 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight mb-6">
                   {t("mediterranean.heading")}
                 </h2>
-                <p className="text-lg text-stone-600 font-light leading-relaxed">
+                <p className="text-[1.44rem] text-stone-700 font-semibold leading-relaxed py-6">
                   {t("mediterranean.description")}
                 </p>
               </div>
@@ -258,7 +258,7 @@ export default function Index() {
                   <h3 className="text-2xl font-light text-stone-900 mb-2">
                     {t("newsletter.heading")}
                   </h3>
-                  <p className="text-sm text-stone-600 font-light">
+                  <p className="text-[1.01rem] text-stone-700 font-semibold leading-relaxed">
                     {t("mediterranean.newsletterSubheading")}
                   </p>
                 </div>
@@ -344,11 +344,11 @@ export default function Index() {
                 </h2>
               </div>
 
-              <p className="text-lg text-stone-300 font-light leading-relaxed">
+              <p className="text-[1.44rem] text-stone-400 font-semibold leading-relaxed py-6">
                 {t("artist.p1")}
               </p>
 
-              <p className="text-base text-stone-400 font-light leading-relaxed">
+              <p className="text-[1.29rem] text-stone-500 font-semibold leading-relaxed py-6">
                 {t("artist.p2")}
               </p>
 
@@ -362,7 +362,7 @@ export default function Index() {
                 luminous atmosphere."
               </blockquote>
 
-              <p className="text-sm text-stone-400 font-light">
+              <p className="text-[1.01rem] text-stone-500 font-semibold">
                 — Jelena Zivkovic, Mosaic Artist
               </p>
 
@@ -386,7 +386,7 @@ export default function Index() {
           <h2 className="text-5xl md:text-6xl font-light tracking-tight text-white mb-8">
             {t("cta.subheading")}
           </h2>
-          <p className="text-lg text-stone-300 font-light mb-10 max-w-2xl mx-auto">
+          <p className="text-[1.44rem] text-stone-400 font-semibold mb-10 max-w-2xl mx-auto leading-relaxed">
             {t("cta.description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

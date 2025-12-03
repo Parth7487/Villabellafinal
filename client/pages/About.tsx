@@ -12,7 +12,7 @@ export default function About() {
           <h1 className="text-6xl md:text-7xl font-light tracking-tight text-white mb-6 leading-tight">
             {t("about.headerTitle") || "Et ønske om å bringe syden hjem"}
           </h1>
-          <p className="text-lg text-stone-300 font-light max-w-3xl mx-auto">
+          <p className="text-[1.44rem] text-stone-400 font-semibold py-6 leading-relaxed max-w-3xl mx-auto">
             {t("about.headerSubtitle") ||
               "En reise som startet med en drøm om å beholde følelsen av Middelhavet hele året"}
           </p>
@@ -30,16 +30,16 @@ export default function About() {
               <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
                 {t("about.inspirationHeading") || "Inspirasjonen"}
               </h2>
-              <div className="space-y-6 text-stone-600 font-light leading-relaxed">
-                <p>
+              <div className="space-y-6 leading-relaxed">
+                <p className="text-[1.29rem] text-stone-700 font-semibold leading-relaxed">
                   {t("about.inspirationP1") ||
                     "For alle som drømmer om å ta med seg følelsen av varme, solrike Middelhavsfeeling hjem — Velkommen til VillaBella."}
                 </p>
-                <p>
+                <p className="text-[1.29rem] text-stone-700 font-semibold leading-relaxed">
                   {t("about.inspirationP2") ||
                     "Vi i Skandinavia elsker å reise til Middelhavet for å finne solen som varmer litt dypere og roen som får skuldrene våre til å slappe av. Men så drar vi hjem til den grå hverdagen, og følelsen forsvinner så fort."}
                 </p>
-                <p>
+                <p className="text-[1.29rem] text-stone-700 font-semibold leading-relaxed">
                   {t("about.inspirationP3") ||
                     "VillaBella inviterer deg inn i et univers hvor denne følelsen får lov å bli, gjennom våre design som bærer mosaikkmønstre og dyp inspirasjon fra Middelhavsånden."}
                 </p>
@@ -128,7 +128,7 @@ export default function About() {
                     <h4 className="text-sm font-light uppercase tracking-wider text-stone-900 mb-2">
                       {t("about.material") || "Materiale"}
                     </h4>
-                    <p className="text-sm text-stone-600 font-light">
+                    <p className="text-[1.01rem] text-stone-700 font-semibold">
                       {t("about.materialDesc") ||
                         "100% organisk bomull fra etiske kilder"}
                     </p>
@@ -137,7 +137,7 @@ export default function About() {
                     <h4 className="text-sm font-light uppercase tracking-wider text-stone-900 mb-2">
                       {t("about.production") || "Produksjon"}
                     </h4>
-                    <p className="text-sm text-stone-600 font-light">
+                    <p className="text-[1.01rem] text-stone-700 font-semibold">
                       {t("about.productionDesc") ||
                         "Håndpakket i Norge, produsert i Tyrkia"}
                     </p>
@@ -146,7 +146,7 @@ export default function About() {
                     <h4 className="text-sm font-light uppercase tracking-wider text-stone-900 mb-2">
                       {t("about.design") || "Design"}
                     </h4>
-                    <p className="text-sm text-stone-600 font-light">
+                    <p className="text-[1.01rem] text-stone-700 font-semibold">
                       {t("about.designDesc") ||
                         "Kunstnerisk tolkning av mediterransk ikonografi"}
                     </p>
@@ -155,7 +155,7 @@ export default function About() {
                     <h4 className="text-sm font-light uppercase tracking-wider text-stone-900 mb-2">
                       {t("about.sustainability") || "Bærekraft"}
                     </h4>
-                    <p className="text-sm text-stone-600 font-light">
+                    <p className="text-[1.01rem] text-stone-700 font-semibold">
                       {t("about.sustainabilityDesc") ||
                         "Miljøvennlig produksjon og etiske standarder"}
                     </p>
@@ -217,8 +217,10 @@ export default function About() {
                   <p className="text-stone-400 font-light mb-4">
                     {t("about.signoff") || "Med varme og håp,"}
                   </p>
-                  <p className="text-lg text-white font-light">Ola & Milad</p>
-                  <p className="text-sm text-stone-500 font-light mt-2">
+                  <p className="text-[1.29rem] text-white font-semibold">
+                    Ola & Milad
+                  </p>
+                  <p className="text-[1.01rem] text-stone-400 font-semibold mt-2">
                     {t("about.founders") || "Grunnleggere av VillaBella"}
                   </p>
                 </div>
@@ -234,7 +236,7 @@ export default function About() {
           <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-6">
             {t("about.ctaHeading") || "Bli en del av VillaBella familien"}
           </h2>
-          <p className="text-lg text-stone-600 font-light mb-8 max-w-2xl mx-auto">
+          <p className="text-[1.44rem] text-stone-700 font-semibold py-6 leading-relaxed mb-8 max-w-2xl mx-auto">
             {t("about.ctaText") ||
               "Utforsk vår samling av håndlagde putehyller og oppdag hvordan du kan bringe Middelhavet inn i ditt hjem."}
           </p>

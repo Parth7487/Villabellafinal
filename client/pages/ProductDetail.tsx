@@ -109,7 +109,7 @@ export default function ProductDetail() {
               <h1 className="text-4xl md:text-5xl font-light tracking-tight text-stone-900">
                 {product.title}
               </h1>
-              <p className="text-lg text-stone-600 font-light">
+              <p className="text-[1.29rem] text-stone-700 font-semibold leading-relaxed">
                 {product.subtitle}
               </p>
             </div>
@@ -139,7 +139,7 @@ export default function ProductDetail() {
             </div>
 
             {/* Product Description */}
-            <p className="text-stone-700 font-light leading-relaxed">
+            <p className="text-[1.15rem] text-stone-800 font-semibold leading-relaxed py-6">
               {product.description}
             </p>
 
