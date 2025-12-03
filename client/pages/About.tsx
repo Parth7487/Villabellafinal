@@ -179,66 +179,66 @@ export default function About() {
       {/* Section 3.5: Visual Gallery */}
       <section className="py-20 md:py-32 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
+          <div className="mb-16 text-center">
+            <p className="text-xs tracking-widest font-light text-stone-500 uppercase mb-6 block">
               {t("about.galleryLabel") || "Vår reise"}
             </p>
-            <h2 className="text-5xl font-light tracking-tight text-stone-900">
+            <h2 className="text-6xl md:text-7xl font-light tracking-tight text-stone-900 leading-tight">
               {t("about.galleryHeading") || "Håndlagde detaljer"}
             </h2>
           </div>
 
           {/* Full-width image */}
-          <div className="mb-12 rounded-lg overflow-hidden h-[300px] sm:h-[400px] md:h-[500px]">
+          <div className="mb-12 rounded-lg overflow-hidden h-[350px] sm:h-[500px] md:h-[650px]">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F8b9f8e45cd7e4f9ba8d7e6c5b4a3f2e1?format=webp&width=1200"
               alt="Mosaic craftsmanship details"
               className="w-full h-full object-cover"
               width="1200"
-              height="500"
+              height="650"
             />
           </div>
 
           {/* Grid of images */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-lg overflow-hidden h-[300px] sm:h-[400px]">
+            <div className="rounded-lg overflow-hidden h-[350px] sm:h-[500px]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F7c6d5e4f3a2b1c0d9e8f7g6h5i4j3k2l?format=webp&width=600"
                 alt="Mediterranean color palette"
                 className="w-full h-full object-cover"
                 width="600"
-                height="400"
+                height="500"
               />
             </div>
-            <div className="rounded-lg overflow-hidden h-[300px] sm:h-[400px]">
+            <div className="rounded-lg overflow-hidden h-[350px] sm:h-[500px]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F9a8b7c6d5e4f3a2b1c0d9e8f7g6h5i4j?format=webp&width=600"
                 alt="Handcrafted mosaic patterns"
                 className="w-full h-full object-cover"
                 width="600"
-                height="400"
+                height="500"
               />
             </div>
           </div>
 
           {/* Two more images below */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <div className="rounded-lg overflow-hidden h-[300px] sm:h-[400px]">
+            <div className="rounded-lg overflow-hidden h-[350px] sm:h-[500px]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5f4e3d2c1b0a9z8y7x6w5v4u3t2s1r0q?format=webp&width=600"
                 alt="VillaBella cushion collection display"
                 className="w-full h-full object-cover"
                 width="600"
-                height="400"
+                height="500"
               />
             </div>
-            <div className="rounded-lg overflow-hidden h-[300px] sm:h-[400px]">
+            <div className="rounded-lg overflow-hidden h-[350px] sm:h-[500px]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F4g3h2i1j0k9l8m7n6o5p4q3r2s1t0u9v?format=webp&width=600"
                 alt="Mediterranean lifestyle inspiration"
                 className="w-full h-full object-cover"
                 width="600"
-                height="400"
+                height="500"
               />
             </div>
           </div>
