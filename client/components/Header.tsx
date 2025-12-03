@@ -36,10 +36,10 @@ const Header = ({ showAlways = false }: HeaderProps) => {
   }, [isMenuOpen]);
 
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Products", href: "/products" },
-    { label: "About us", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: t("nav.home"), href: "/" },
+    { label: t("nav.products"), href: "/products" },
+    { label: t("nav.about"), href: "/about" },
+    { label: t("nav.contact"), href: "/contact" },
   ];
 
   const shouldShowHeader = showAlways || isScrolled;

@@ -16,6 +16,10 @@ const translations: Record<Language, Record<string, string>> = {
   NO: {
     "banner.text":
       "Håndplukket mediterrane design • Håndpakket med omhu • Laget i Europa",
+    "nav.home": "Hjem",
+    "nav.products": "Produkter",
+    "nav.about": "Om oss",
+    "nav.contact": "Kontakt",
     "inspiration.label": "Inspirasjonen",
     "inspiration.heading": "Inspirasjonen",
     "inspiration.intro":
@@ -38,8 +42,15 @@ const translations: Record<Language, Record<string, string>> = {
     "riviera.specialDesc":
       "Velg med eller uten innerpute fra norsk dun — legg til ekstra komfort eller spar med bare putehyllen.",
     "riviera.shop": "Kjøp Kolleksjonen",
+    "riviera.specialLabel": "Spesialtilbud",
+    "mediterranean.heading":
+      "VillaBella – fordi hjemmet ditt fortjener mer enn minimalisme.",
+    "mediterranean.description":
+      "I en verden dominert av minimalistisk estetikk, inviterer VillaBella deg til å søke etter det ekstra. Vi tror at et vakkert hjem forteller historier, vekker følelser, og reflekterer dine drømmer. Våre håndlagde mosaikkputer er en invitasjon til det varme, solrike og kulturelt rike livet ved Middelhavet.",
+    "mediterranean.newsletterSubheading":
+      "Bli en del av vår mediterrane sirkel og motta eksklusive tilbud.",
     "artist.label": "Designet av Jelena",
-    "artist.heading": "Et ekstraordinært samarbeid",
+    "artist.heading": "Møt kunstneren",
     "artist.p1":
       "VillaBella er dypt inspirert av den tidløse kvaliteten som mosaikker utstråler. Det er derfor vi har fått hjelp fra Jelena Zivkovic, en dyktig mosaikkkünstner.",
     "artist.p2":
@@ -244,14 +255,24 @@ const translations: Record<Language, Record<string, string>> = {
       "VillaBella er en invitasjon til mennesker som ønsker «det lille ekstra» i hjemmene sine — som er forelsket i skjønnhet, håndverk og den mediterrane livsfilosofien.",
     "about.signoff": "Med varme og håp,",
     "about.founders": "Grunnleggere av VillaBella",
+    "about.galleryLabel": "Vår reise",
+    "about.galleryHeading": "Håndlagde detaljer",
     "about.ctaHeading": "Bli en del av VillaBella familien",
     "about.ctaText":
       "Utforsk vår samling av håndlagde putehyller og oppdag hvordan du kan bringe Middelhavet inn i ditt hjem.",
     "about.ctaButton": "Utforsk kolleksjonen",
+    "newsletter.gdprLabel": "Jeg godtar vilkårene og personvernreglementene",
+    "newsletter.gdprDescription":
+      "Ved å abonnere godtar du våre vilkår og samtykker til å motta nyhetsbrev.",
+    "newsletter.termsLink": "Les våre vilkår",
   },
   EN: {
     "banner.text":
       "Handpicked Mediterranean designs • Hand-packed with care • Made in Europe",
+    "nav.home": "Home",
+    "nav.products": "Products",
+    "nav.about": "About us",
+    "nav.contact": "Contact",
     "inspiration.label": "Our Inspiration",
     "inspiration.heading": "Bringing Syden Home",
     "inspiration.intro":
@@ -274,8 +295,15 @@ const translations: Record<Language, Record<string, string>> = {
     "riviera.specialDesc":
       "Choose with or without inner pillow from Norwegian Dun — add extra comfort or save with our cushion covers only option.",
     "riviera.shop": "Shop the Collection",
+    "riviera.specialLabel": "Special Offer",
+    "mediterranean.heading":
+      "VillaBella – because your home deserves more than minimalism.",
+    "mediterranean.description":
+      "In a world dominated by minimalist aesthetics, VillaBella invites you to seek the extraordinary. We believe that a beautiful home tells stories, awakens emotions, and reflects your dreams. Our handcrafted mosaic cushions are an invitation to the warm, sun-filled, and culturally rich life of the Mediterranean.",
+    "mediterranean.newsletterSubheading":
+      "Join our Mediterranean circle and receive exclusive offers.",
     "artist.label": "Artist Collaboration",
-    "artist.heading": "An Extraordinary Collaboration",
+    "artist.heading": "Meet the Artist",
     "artist.p1":
       "VillaBella is deeply inspired by the timeless quality that mosaics radiate. That's why we have received help from Jelena Zivkovic, a skilled mosaic artist.",
     "artist.p2":
@@ -482,10 +510,16 @@ const translations: Record<Language, Record<string, string>> = {
       "VillaBella is an invitation to people who want 'that little extra' in their homes — those who are in love with beauty, craftsmanship, and the Mediterranean lifestyle philosophy.",
     "about.signoff": "With warmth and hope,",
     "about.founders": "Founders of VillaBella",
+    "about.galleryLabel": "Our Journey",
+    "about.galleryHeading": "Handcrafted Details",
     "about.ctaHeading": "Join the VillaBella Family",
     "about.ctaText":
       "Explore our collection of handcrafted pillow covers and discover how you can bring the Mediterranean into your home.",
     "about.ctaButton": "Explore the Collection",
+    "newsletter.gdprLabel": "I accept the terms and privacy policy",
+    "newsletter.gdprDescription":
+      "By subscribing, you accept our terms and agree to receive newsletters.",
+    "newsletter.termsLink": "Read our terms",
   },
 };
 

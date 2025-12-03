@@ -3,10 +3,29 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import ProductCard from "@/components/ProductCard";
+import { useState } from "react";
 
 export default function Index() {
   const { t } = useLanguage();
   const { formatPrice } = useCurrency();
+  const [email, setEmail] = useState("");
+  const [gdprAccepted, setGdprAccepted] = useState(false);
+  const [subscriptionLoading, setSubscriptionLoading] = useState(false);
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!gdprAccepted) {
+      return;
+    }
+    setSubscriptionLoading(true);
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 500));
+      setEmail("");
+      setGdprAccepted(false);
+    } finally {
+      setSubscriptionLoading(false);
+    }
+  };
 
   return (
     <div className="bg-white">
@@ -34,7 +53,7 @@ export default function Index() {
         <div className="relative z-10 mt-auto">
           <Link
             to="/products"
-            className="group inline-flex px-16 py-5 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-sm transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-stone-900/30"
+            className="group inline-flex px-20 py-6 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-sm transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-stone-900/30"
           >
             <span className="flex items-center gap-4">
               {t("hero.cta")}
@@ -130,7 +149,7 @@ export default function Index() {
           {/* Bundle Offer Callout */}
           <div className="bg-gradient-to-r from-stone-100 to-stone-50 rounded-lg p-12 text-center border border-stone-200">
             <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
-              Special Offer
+              {t("riviera.specialLabel")}
             </p>
             <h3 className="text-3xl font-light text-stone-900 mb-4">
               {t("riviera.special.two")}{" "}
@@ -218,27 +237,73 @@ export default function Index() {
         </div>
       </section>
 
-      {/* VillaBella Statement Section - Mediterranean Elegance */}
+      {/* Mediterranean Dream + Newsletter Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left content */}
-            <div className="space-y-8 order-last lg:order-first">
-              <h1 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight">
-                VillaBella – fordi hjemmet ditt fortjener mer enn minimalisme.
-              </h1>
-              <p className="text-lg text-stone-600 font-light leading-relaxed">
-                I en verden dominert av minimalistisk estetikk, inviterer
-                VillaBella deg til å søke etter det ekstra. Vi tror at et
-                vakkert hjem forteller historier, vekker følelser, og
-                reflekterer dine drømmer. Våre håndlagde mosaikkputer er en
-                invitasjon til det varme, solrike og kulturelt rike livet ved
-                Middelhavet.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left content - Mediterranean Dream */}
+            <div className="space-y-10 order-last lg:order-first">
+              <div>
+                <h2 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight mb-6">
+                  {t("mediterranean.heading")}
+                </h2>
+                <p className="text-lg text-stone-600 font-light leading-relaxed">
+                  {t("mediterranean.description")}
+                </p>
+              </div>
+
+              {/* Newsletter Form */}
+              <div className="space-y-6 pt-6 border-t border-stone-200">
+                <div>
+                  <h3 className="text-2xl font-light text-stone-900 mb-2">
+                    {t("newsletter.heading")}
+                  </h3>
+                  <p className="text-sm text-stone-600 font-light">
+                    {t("mediterranean.newsletterSubheading")}
+                  </p>
+                </div>
+
+                <form onSubmit={handleNewsletterSubmit} className="space-y-4">
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder={t("newsletter.placeholder")}
+                      required
+                      className="flex-1 px-6 py-4 bg-stone-50 border border-stone-300 text-stone-900 placeholder-stone-500 rounded-sm text-sm focus:outline-none focus:ring-2 focus:ring-stone-400 focus:border-transparent transition"
+                    />
+                    <button
+                      type="submit"
+                      disabled={!gdprAccepted || subscriptionLoading}
+                      className="px-10 py-4 bg-stone-900 hover:bg-stone-800 disabled:bg-stone-400 text-white font-light uppercase tracking-wider text-sm transition duration-300 rounded-sm"
+                    >
+                      {subscriptionLoading ? "..." : t("newsletter.subscribe")}
+                    </button>
+                  </div>
+
+                  {/* GDPR Compliance Checkbox */}
+                  <div className="flex items-start gap-3 pt-2">
+                    <input
+                      type="checkbox"
+                      id="gdpr"
+                      checked={gdprAccepted}
+                      onChange={(e) => setGdprAccepted(e.target.checked)}
+                      className="w-5 h-5 mt-0.5 bg-white border border-stone-300 rounded cursor-pointer accent-stone-900 flex-shrink-0"
+                    />
+                    <label
+                      htmlFor="gdpr"
+                      className="text-xs text-stone-600 font-light cursor-pointer"
+                    >
+                      {t("newsletter.gdprDescription")}
+                    </label>
+                  </div>
+                </form>
+              </div>
             </div>
 
             {/* Right image - Mediterranean landscape */}
-            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full min-h-80 rounded-lg overflow-hidden shadow-2xl border border-stone-200">
+            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full min-h-96 rounded-lg overflow-hidden shadow-2xl border border-stone-200">
               <img
                 src="https://images.pexels.com/photos/11898897/pexels-photo-11898897.jpeg"
                 alt="Mediterranean coastline with calm sea and rocky cliffs"
@@ -271,7 +336,7 @@ export default function Index() {
             {/* Content */}
             <div className="space-y-8">
               <div>
-                <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
+                <p className="text-xs tracking-widest font-light text-white uppercase mb-4">
                   {t("artist.label")}
                 </p>
                 <h2 className="text-5xl font-light tracking-tight text-white">
@@ -288,7 +353,13 @@ export default function Index() {
               </p>
 
               <blockquote className="border-l-4 border-stone-700 pl-6 py-6 italic text-stone-300 font-light text-lg">
-                "{t("artist.quote")}"
+                "This collection grew from my lifelong love of mosaic
+                storytelling and the warm, symbolic world of Mediterranean art.
+                As an artist shaped by both traditional iconography and
+                imaginative painting, I am inspired by symbols that reveal
+                themselves slowly. In these pieces, I wanted to capture
+                timelessness, where myth, nature, and memory blend into a calm,
+                luminous atmosphere."
               </blockquote>
 
               <p className="text-sm text-stone-400 font-light">
@@ -331,77 +402,6 @@ export default function Index() {
             >
               {t("cta.learn")}
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section - Bli med på reisen */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-stone-900 via-stone-950 to-stone-950 overflow-hidden">
-        {/* Subtle mosaic background pattern */}
-        <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <svg
-            className="w-full h-full"
-            viewBox="0 0 1200 400"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <defs>
-              <pattern
-                id="mosaic-pattern"
-                x="0"
-                y="0"
-                width="60"
-                height="60"
-                patternUnits="userSpaceOnUse"
-              >
-                <rect
-                  x="0"
-                  y="0"
-                  width="60"
-                  height="60"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  className="text-stone-500"
-                />
-                <circle
-                  cx="30"
-                  cy="30"
-                  r="8"
-                  fill="currentColor"
-                  className="text-stone-400"
-                />
-                <path
-                  d="M 15 30 Q 30 20, 45 30"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  fill="none"
-                  className="text-stone-400"
-                />
-                <path
-                  d="M 30 15 L 30 45"
-                  stroke="currentColor"
-                  strokeWidth="0.5"
-                  className="text-stone-400"
-                />
-              </pattern>
-            </defs>
-            <rect width="1200" height="400" fill="url(#mosaic-pattern)" />
-          </svg>
-        </div>
-
-        <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-light text-white mb-12">
-            {t("newsletter.heading")}
-          </h2>
-          <div className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
-            <input
-              type="email"
-              placeholder={t("newsletter.placeholder")}
-              className="flex-1 px-6 py-4 bg-stone-900/50 border border-stone-700 text-white placeholder-stone-400 rounded-sm text-sm focus:outline-none focus:ring-2 focus:ring-stone-600 transition"
-            />
-            <button className="px-10 py-4 bg-stone-800 hover:bg-stone-700 text-white font-light uppercase tracking-wider text-sm transition duration-300 shadow-lg border border-stone-700 hover:border-stone-600">
-              {t("newsletter.subscribe")}
-            </button>
           </div>
         </div>
       </section>

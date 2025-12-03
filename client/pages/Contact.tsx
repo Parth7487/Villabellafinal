@@ -118,7 +118,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
+                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 transition"
                     placeholder={
                       t("contact.namePlaceholder") || "Enter your name"
                     }
@@ -136,7 +136,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
+                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 transition"
                     placeholder={
                       t("contact.emailPlaceholder") || "your@email.com"
                     }
@@ -154,7 +154,7 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
+                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 transition"
                     placeholder={
                       t("contact.subjectPlaceholder") || "How can we help?"
                     }
@@ -172,7 +172,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition resize-none"
+                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 transition resize-none"
                     placeholder={
                       t("contact.messagePlaceholder") ||
                       "Tell us more about your inquiry..."
@@ -183,7 +183,7 @@ export default function Contact() {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-emerald-700 hover:bg-emerald-800 text-white font-light uppercase tracking-wider text-sm rounded-sm transition duration-300 flex items-center justify-center gap-2"
+                  className="w-full px-8 py-4 bg-stone-900 hover:bg-stone-800 text-white font-light uppercase tracking-wider text-sm rounded-sm transition duration-300 flex items-center justify-center gap-2"
                 >
                   {t("contact.sendMessage") || "Send Message"}
                   <ArrowRight size={16} />
