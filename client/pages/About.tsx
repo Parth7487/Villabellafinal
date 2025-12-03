@@ -217,7 +217,9 @@ export default function About() {
                   <p className="text-stone-400 font-light mb-4">
                     {t("about.signoff") || "Med varme og håp,"}
                   </p>
-                  <p className="text-[1.29rem] text-white font-semibold">Ola & Milad</p>
+                  <p className="text-[1.29rem] text-white font-semibold">
+                    Ola & Milad
+                  </p>
                   <p className="text-[1.01rem] text-stone-400 font-semibold mt-2">
                     {t("about.founders") || "Grunnleggere av VillaBella"}
                   </p>

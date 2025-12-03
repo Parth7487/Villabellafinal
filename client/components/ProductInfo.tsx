@@ -23,14 +23,19 @@ export default function ProductInfo({ product }: ProductInfoProps) {
       title: t("productInfo.material"),
       content: (
         <div className="space-y-3">
-          <p className="text-[1.15rem] text-stone-800 font-semibold">{product.material.cover}</p>
+          <p className="text-[1.15rem] text-stone-800 font-semibold">
+            {product.material.cover}
+          </p>
           <div>
             <p className="text-xs uppercase tracking-wider font-light text-stone-600 mb-2">
               {t("productInfo.features")}
             </p>
             <ul className="space-y-1">
               {product.material.features.map((feature, idx) => (
-                <li key={idx} className="text-[1.01rem] text-stone-700 font-semibold">
+                <li
+                  key={idx}
+                  className="text-[1.01rem] text-stone-700 font-semibold"
+                >
                   • {feature}
                 </li>
               ))}
@@ -72,7 +77,9 @@ export default function ProductInfo({ product }: ProductInfoProps) {
             <p className="text-xs uppercase tracking-wider font-light text-stone-600 mb-1">
               {t("productInfo.artist")}
             </p>
-            <p className="text-[1.15rem] text-stone-800 font-semibold">{product.design.artist}</p>
+            <p className="text-[1.15rem] text-stone-800 font-semibold">
+              {product.design.artist}
+            </p>
           </div>
           <div>
             <p className="text-xs uppercase tracking-wider font-light text-stone-600 mb-1">
@@ -94,7 +101,10 @@ export default function ProductInfo({ product }: ProductInfoProps) {
       content: (
         <ul className="space-y-2">
           {product.care.map((instruction, idx) => (
-            <li key={idx} className="text-[1.15rem] text-stone-800 font-semibold">
+            <li
+              key={idx}
+              className="text-[1.15rem] text-stone-800 font-semibold"
+            >
               • {instruction}
             </li>
           ))}
