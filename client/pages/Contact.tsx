@@ -9,6 +9,7 @@ export default function Contact() {
     email: "",
     subject: "",
     message: "",
+    gdprAccepted: false,
   });
 
   const handleChange = (
@@ -118,7 +119,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
+                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 transition"
                     placeholder={
                       t("contact.namePlaceholder") || "Enter your name"
                     }
@@ -136,7 +137,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
+                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 transition"
                     placeholder={
                       t("contact.emailPlaceholder") || "your@email.com"
                     }
@@ -154,7 +155,7 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
+                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 transition"
                     placeholder={
                       t("contact.subjectPlaceholder") || "How can we help?"
                     }
@@ -172,7 +173,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition resize-none"
+                    className="w-full px-6 py-4 border border-stone-300 rounded-sm font-light text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 transition resize-none"
                     placeholder={
                       t("contact.messagePlaceholder") ||
                       "Tell us more about your inquiry..."
@@ -180,10 +181,27 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* GDPR Compliance Checkbox */}
+                <div className="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    id="gdpr"
+                    checked={formData.gdprAccepted}
+                    onChange={(e) =>
+                      setFormData({ ...formData, gdprAccepted: e.target.checked })
+                    }
+                    className="w-5 h-5 mt-0.5 bg-white border border-stone-300 rounded cursor-pointer accent-stone-900 flex-shrink-0"
+                  />
+                  <label htmlFor="gdpr" className="text-xs text-stone-600 font-light cursor-pointer">
+                    {t("newsletter.gdprDescription") || "By subscribing, you accept our terms and agree to receive newsletters."}
+                  </label>
+                </div>
+
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-emerald-700 hover:bg-emerald-800 text-white font-light uppercase tracking-wider text-sm rounded-sm transition duration-300 flex items-center justify-center gap-2"
+                  disabled={!formData.gdprAccepted}
+                  className="w-full px-8 py-4 bg-stone-900 hover:bg-stone-800 disabled:bg-stone-400 text-white font-light uppercase tracking-wider text-sm rounded-sm transition duration-300 flex items-center justify-center gap-2"
                 >
                   {t("contact.sendMessage") || "Send Message"}
                   <ArrowRight size={16} />
