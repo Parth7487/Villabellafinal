@@ -42,6 +42,7 @@ const translations: Record<Language, Record<string, string>> = {
     "riviera.specialDesc":
       "Velg med eller uten innerpute fra norsk dun — legg til ekstra komfort eller spar med bare putehyllen.",
     "riviera.shop": "Kjøp Kolleksjonen",
+    "riviera.specialLabel": "Spesialtilbud",
     "artist.label": "Designet av Jelena",
     "artist.heading": "Møt kunstneren",
     "artist.p1":
@@ -285,6 +286,7 @@ const translations: Record<Language, Record<string, string>> = {
     "riviera.specialDesc":
       "Choose with or without inner pillow from Norwegian Dun — add extra comfort or save with our cushion covers only option.",
     "riviera.shop": "Shop the Collection",
+    "riviera.specialLabel": "Special Offer",
     "artist.label": "Artist Collaboration",
     "artist.heading": "Meet the Artist",
     "artist.p1":
