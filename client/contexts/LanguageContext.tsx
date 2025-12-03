@@ -253,6 +253,8 @@ const translations: Record<Language, Record<string, string>> = {
       "VillaBella er en invitasjon til mennesker som ønsker «det lille ekstra» i hjemmene sine — som er forelsket i skjønnhet, håndverk og den mediterrane livsfilosofien.",
     "about.signoff": "Med varme og håp,",
     "about.founders": "Grunnleggere av VillaBella",
+    "about.galleryLabel": "Vår reise",
+    "about.galleryHeading": "Håndlagde detaljer",
     "about.ctaHeading": "Bli en del av VillaBella familien",
     "about.ctaText":
       "Utforsk vår samling av håndlagde putehyller og oppdag hvordan du kan bringe Middelhavet inn i ditt hjem.",
@@ -503,6 +505,8 @@ const translations: Record<Language, Record<string, string>> = {
       "VillaBella is an invitation to people who want 'that little extra' in their homes — those who are in love with beauty, craftsmanship, and the Mediterranean lifestyle philosophy.",
     "about.signoff": "With warmth and hope,",
     "about.founders": "Founders of VillaBella",
+    "about.galleryLabel": "Our Journey",
+    "about.galleryHeading": "Handcrafted Details",
     "about.ctaHeading": "Join the VillaBella Family",
     "about.ctaText":
       "Explore our collection of handcrafted pillow covers and discover how you can bring the Mediterranean into your home.",
