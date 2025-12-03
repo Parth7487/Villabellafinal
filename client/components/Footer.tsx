@@ -7,10 +7,13 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
   const { t } = useLanguage();
+  const [footerEmail, setFooterEmail] = useState("");
+  const [footerGdprAccepted, setFooterGdprAccepted] = useState(false);
 
   return (
     <footer className="bg-stone-950 text-stone-100">
@@ -26,16 +29,47 @@ const Footer = () => {
                 {t("footer.newsletterDesc")}
               </p>
             </div>
-            <div className="flex gap-3">
-              <input
-                type="email"
-                placeholder={t("footer.emailPlaceholder")}
-                className="flex-1 px-5 py-3 bg-stone-900 text-white placeholder-stone-500 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-stone-600 transition"
-              />
-              <button className="px-8 py-3 bg-stone-800 hover:bg-stone-700 text-white font-light rounded-sm transition duration-300">
-                {t("footer.subscribe")}
-              </button>
-            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                setFooterEmail("");
+                setFooterGdprAccepted(false);
+              }}
+              className="space-y-4"
+            >
+              <div className="flex gap-3">
+                <input
+                  type="email"
+                  value={footerEmail}
+                  onChange={(e) => setFooterEmail(e.target.value)}
+                  placeholder={t("footer.emailPlaceholder")}
+                  required
+                  className="flex-1 px-5 py-3 bg-stone-900 text-white placeholder-stone-500 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-stone-600 transition"
+                />
+                <button
+                  type="submit"
+                  disabled={!footerGdprAccepted}
+                  className="px-8 py-3 bg-stone-800 hover:bg-stone-700 disabled:bg-stone-600 text-white font-light rounded-sm transition duration-300"
+                >
+                  {t("footer.subscribe")}
+                </button>
+              </div>
+              <div className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="footer-gdpr"
+                  checked={footerGdprAccepted}
+                  onChange={(e) => setFooterGdprAccepted(e.target.checked)}
+                  className="w-4 h-4 mt-1 bg-stone-900 border border-stone-600 rounded cursor-pointer accent-stone-300 flex-shrink-0"
+                />
+                <label
+                  htmlFor="footer-gdpr"
+                  className="text-xs text-stone-400 font-light cursor-pointer leading-relaxed"
+                >
+                  {t("newsletter.gdprDescription")}
+                </label>
+              </div>
+            </form>
           </div>
         </div>
       </div>
