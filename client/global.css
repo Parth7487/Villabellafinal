@@ -119,6 +119,10 @@
     word-break: break-word;
   }
 
+  p {
+    font-weight: 700;
+  }
+
   pre,
   code {
     overflow-x: auto;
