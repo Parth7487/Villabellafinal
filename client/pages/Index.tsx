@@ -149,7 +149,7 @@ export default function Index() {
           {/* Bundle Offer Callout */}
           <div className="bg-gradient-to-r from-stone-100 to-stone-50 rounded-lg p-12 text-center border border-stone-200">
             <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-4">
-              Special Offer
+              {t("riviera.specialLabel")}
             </p>
             <h3 className="text-3xl font-light text-stone-900 mb-4">
               {t("riviera.special.two")}{" "}
