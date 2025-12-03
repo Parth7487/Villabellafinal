@@ -96,7 +96,7 @@ export default function ProductCard({
       </div>
 
       <h3 className="text-xl text-stone-900 font-light mb-2">{name}</h3>
-      <p className="text-sm text-stone-600 font-light mb-4">{description}</p>
+      <p className="text-[1.01rem] text-stone-700 font-semibold mb-4">{description}</p>
       <div className="flex items-center justify-between">
         <span className="text-lg text-stone-900">{price}</span>
         <ArrowRight
