@@ -245,15 +245,10 @@ export default function Index() {
             <div className="space-y-10 order-last lg:order-first">
               <div>
                 <h2 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 leading-tight mb-6">
-                  VillaBella – fordi hjemmet ditt fortjener mer enn minimalisme.
+                  {t("mediterranean.heading")}
                 </h2>
                 <p className="text-lg text-stone-600 font-light leading-relaxed">
-                  I en verden dominert av minimalistisk estetikk, inviterer
-                  VillaBella deg til å søke etter det ekstra. Vi tror at et
-                  vakkert hjem forteller historier, vekker følelser, og
-                  reflekterer dine drømmer. Våre håndlagde mosaikkputer er en
-                  invitasjon til det varme, solrike og kulturelt rike livet ved
-                  Middelhavet.
+                  {t("mediterranean.description")}
                 </p>
               </div>
 
