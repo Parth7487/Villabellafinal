@@ -30,7 +30,7 @@ export default function Index() {
   return (
     <div className="bg-white">
       {/* Hero Section with Video Background */}
-      <section className="relative w-screen h-screen bg-stone-900 overflow-hidden flex flex-col items-center justify-between pb-20">
+      <section className="relative w-full h-screen bg-stone-900 overflow-hidden flex flex-col items-center justify-between pb-20">
         {/* Video background - with fallback */}
         <div className="absolute inset-0 bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950"></div>
         <video
@@ -53,7 +53,7 @@ export default function Index() {
         <div className="relative z-10 mt-auto">
           <Link
             to="/products"
-            className="group inline-flex px-20 py-6 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-sm transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-stone-900/30"
+            className="group inline-flex px-6 sm:px-16 lg:px-20 py-6 bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 text-white font-light uppercase tracking-widest text-sm transition duration-500 shadow-2xl hover:bg-white/15 hover:shadow-stone-900/30"
           >
             <span className="flex items-center gap-4">
               {t("hero.cta")}
@@ -162,7 +162,7 @@ export default function Index() {
             </p>
             <Link
               to="/products"
-              className="inline-flex items-center gap-3 px-12 py-3.5 bg-stone-800 hover:bg-stone-900 text-white font-light uppercase tracking-widest text-xs rounded-sm shadow-lg hover:shadow-xl hover:shadow-stone-800/50 transition duration-300 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-3 px-6 sm:px-12 py-3.5 bg-stone-800 hover:bg-stone-900 text-white font-light uppercase tracking-widest text-xs rounded-sm shadow-lg hover:shadow-xl hover:shadow-stone-800/50 transition duration-300 hover:-translate-y-0.5"
             >
               {t("riviera.shop")} <ArrowRight size={16} />
             </Link>
@@ -276,7 +276,7 @@ export default function Index() {
                     <button
                       type="submit"
                       disabled={!gdprAccepted || subscriptionLoading}
-                      className="px-10 py-4 bg-stone-900 hover:bg-stone-800 disabled:bg-stone-400 text-white font-light uppercase tracking-wider text-sm transition duration-300 rounded-sm"
+                      className="px-6 sm:px-10 py-4 bg-stone-900 hover:bg-stone-800 disabled:bg-stone-400 text-white font-light uppercase tracking-wider text-sm transition duration-300 rounded-sm"
                     >
                       {subscriptionLoading ? "..." : t("newsletter.subscribe")}
                     </button>
@@ -392,13 +392,13 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to="/products"
-              className="px-10 py-4 bg-stone-800 hover:bg-stone-900 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
+              className="px-6 sm:px-10 py-4 bg-stone-800 hover:bg-stone-900 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
             >
               {t("cta.shop")}
             </Link>
             <Link
               to="/about"
-              className="px-10 py-4 border border-stone-700 hover:border-stone-400 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
+              className="px-6 sm:px-10 py-4 border border-stone-700 hover:border-stone-400 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
             >
               {t("cta.learn")}
             </Link>
