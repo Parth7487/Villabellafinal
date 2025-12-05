@@ -478,7 +478,8 @@ export default function Index() {
               </h2>
             </div>
             <p className="text-base md:text-lg text-stone-600 font-light leading-relaxed">
-              {t("gallery.description") || "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories."}
+              {t("gallery.description") ||
+                "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories."}
             </p>
           </div>
 
