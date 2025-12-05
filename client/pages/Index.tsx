@@ -483,9 +483,9 @@ export default function Index() {
           </div>
 
           {/* Gallery Grid - Clean Minimal Design */}
-          <div className="space-y-8 md:space-y-12">
+          <div className="space-y-6 md:space-y-8">
             {/* Row 1 - Two Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               {/* Gallery Item 1 */}
               <div className="flex items-center justify-center">
                 <img
@@ -501,6 +501,18 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fe0d5bce37e904deea60384ee7554be49?format=webp&width=800"
                   alt="Pillow detail with Mediterranean botanical elements"
+                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Gallery Item New - Below Image 1 */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fc0ecb85e649643b7a66bfb42bc27b0d9?format=webp&width=800"
+                  alt="VillaBella tote bag close-up detail"
                   className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
                   loading="lazy"
                 />
