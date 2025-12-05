@@ -1,4 +1,4 @@
-import { ArrowRight, Leaf, Truck, RotateCcw, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
