@@ -521,7 +521,7 @@ export default function Index() {
             </div>
 
             {/* Row 2 - Three Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-1.5 -mt-6 md:-mt-15">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-1.5 -mt-6 md:-mt-[90px]">
               {/* Gallery Item 3 */}
               <div className="flex items-center justify-center">
                 <img
