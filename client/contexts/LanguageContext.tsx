@@ -166,6 +166,14 @@ const translations: Record<Language, Record<string, string>> = {
     "trust.norwegianShop": "Norsk butikk",
     "trust.norwegianShopDesc":
       "Autentiske nordiske verdier, håndlaget med oppmerksomhet",
+    "trust.cotton": "100% Bomull",
+    "trust.cottonDesc": "Premium kvalitet og 100% naturlig materiale",
+    "trust.europeanProduction": "Produsert i Europa",
+    "trust.europeanProductionDesc": "Skapt med omhu og håndverkstradisjoner",
+    "trust.artistDesign": "Kunstnertegnet Design",
+    "trust.artistDesignDesc": "Originale design fra dyktig mosaikkkünstner",
+    "trust.europeanFeathers": "Europeisk Andefjær",
+    "trust.europeanFeaturesDesc": "Premium innerpute for maksimal komfort",
     "products.whyChoose": "Hvorfor Velge VillaBella",
     "products.whyChooseDesc":
       "Vi garanterer kvalitet, rask levering og din fullstendige tilfredshet",
@@ -420,6 +428,14 @@ const translations: Record<Language, Record<string, string>> = {
     "trust.norwegianShop": "Norwegian Shop",
     "trust.norwegianShopDesc":
       "Authentic Nordic values, handmade with attention",
+    "trust.cotton": "100% Cotton",
+    "trust.cottonDesc": "Premium quality and 100% natural material",
+    "trust.europeanProduction": "Produced in Europe",
+    "trust.europeanProductionDesc": "Created with care and craftsmanship traditions",
+    "trust.artistDesign": "Artist-Created Design",
+    "trust.artistDesignDesc": "Original designs from skilled mosaic artist",
+    "trust.europeanFeathers": "European Feathers",
+    "trust.europeanFeaturesDesc": "Premium inner pillow for maximum comfort",
     "products.whyChoose": "Why Choose VillaBella",
     "products.whyChooseDesc":
       "We guarantee quality, fast delivery and your complete satisfaction",
