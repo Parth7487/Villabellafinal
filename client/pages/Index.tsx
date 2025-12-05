@@ -510,11 +510,11 @@ export default function Index() {
               </div>
 
               {/* Right Column - Gallery Item 2 */}
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center h-auto">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fe0d5bce37e904deea60384ee7554be49?format=webp&width=800"
                   alt="Pillow detail with Mediterranean botanical elements"
-                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  className="w-full max-h-96 sm:max-h-[32rem] md:max-h-[40rem] object-cover hover:opacity-90 transition-opacity duration-700"
                   loading="lazy"
                 />
               </div>
