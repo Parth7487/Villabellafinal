@@ -171,67 +171,87 @@ export default function Index() {
       </section>
 
       {/* Trust Badges Section */}
-      <section className="py-16 bg-stone-50">
+      <section className="py-16 md:py-20 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Badge 1 */}
-            <div className="text-center space-y-4">
-              <div className="flex justify-center">
-                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
-                  <Leaf className="text-stone-100" size={28} />
-                </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+            {/* Badge 1 - Cotton */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-32 flex-shrink-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F7f42e97a91164525b5990f1c7159678d?format=webp&width=800"
+                  alt="100% Cotton badge"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
               </div>
-              <h4 className="text-stone-900 font-light text-lg">
-                {t("trust.madeInEurope")}
-              </h4>
-              <p className="text-stone-600 text-sm font-light">
-                {t("trust.madeInEuropeDesc")}
-              </p>
+              <div className="space-y-2">
+                <h4 className="text-stone-900 font-light text-base md:text-lg">
+                  {t("trust.cotton")}
+                </h4>
+                <p className="text-stone-600 text-xs md:text-sm font-light leading-relaxed">
+                  {t("trust.cottonDesc")}
+                </p>
+              </div>
             </div>
 
-            {/* Badge 2 */}
-            <div className="text-center space-y-4">
-              <div className="flex justify-center">
-                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
-                  <Truck className="text-stone-100" size={28} />
-                </div>
+            {/* Badge 2 - European Production */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-32 flex-shrink-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fac2b05c61cb84f349eae3429ae30d34c?format=webp&width=800"
+                  alt="Produced in Europe badge"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
               </div>
-              <h4 className="text-stone-900 font-light text-lg">
-                {t("trust.delivery")}
-              </h4>
-              <p className="text-stone-600 text-sm font-light">
-                {t("trust.deliveryDesc")}
-              </p>
+              <div className="space-y-2">
+                <h4 className="text-stone-900 font-light text-base md:text-lg">
+                  {t("trust.europeanProduction")}
+                </h4>
+                <p className="text-stone-600 text-xs md:text-sm font-light leading-relaxed">
+                  {t("trust.europeanProductionDesc")}
+                </p>
+              </div>
             </div>
 
-            {/* Badge 3 */}
-            <div className="text-center space-y-4">
-              <div className="flex justify-center">
-                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
-                  <RotateCcw className="text-stone-100" size={28} />
-                </div>
+            {/* Badge 3 - Artist Design */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-32 flex-shrink-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F1cf66f7dd0d64553b7d0311a8f2106e0?format=webp&width=800"
+                  alt="Artist-created design badge"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
               </div>
-              <h4 className="text-stone-900 font-light text-lg">
-                {t("trust.returns")}
-              </h4>
-              <p className="text-stone-600 text-sm font-light">
-                {t("trust.returnsDesc")}
-              </p>
+              <div className="space-y-2">
+                <h4 className="text-stone-900 font-light text-base md:text-lg">
+                  {t("trust.artistDesign")}
+                </h4>
+                <p className="text-stone-600 text-xs md:text-sm font-light leading-relaxed">
+                  {t("trust.artistDesignDesc")}
+                </p>
+              </div>
             </div>
 
-            {/* Badge 4 */}
-            <div className="text-center space-y-4">
-              <div className="flex justify-center">
-                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
-                  <CheckCircle className="text-stone-100" size={28} />
-                </div>
+            {/* Badge 4 - European Feathers */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-32 flex-shrink-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F1372431f1ff34f848e72687c12dfe264?format=webp&width=800"
+                  alt="European feathers inner pillow badge"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
               </div>
-              <h4 className="text-stone-900 font-light text-lg">
-                {t("trust.norwegianShop")}
-              </h4>
-              <p className="text-stone-600 text-sm font-light">
-                {t("trust.norwegianShopDesc")}
-              </p>
+              <div className="space-y-2">
+                <h4 className="text-stone-900 font-light text-base md:text-lg">
+                  {t("trust.europeanFeathers")}
+                </h4>
+                <p className="text-stone-600 text-xs md:text-sm font-light leading-relaxed">
+                  {t("trust.europeanFeaturesDesc")}
+                </p>
+              </div>
             </div>
           </div>
         </div>
