@@ -467,98 +467,67 @@ export default function Index() {
       {/* Gallery Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          {/* Gallery Header */}
+          <div className="text-center mb-16 space-y-4">
+            <p className="text-xs tracking-widest font-light text-stone-400 uppercase">
+              {t("gallery.label") || "Inspiration"}
+            </p>
+            <h2 className="text-4xl md:text-5xl font-light text-stone-900">
+              {t("gallery.title") || "Street Shot"}
+            </h2>
+            <p className="text-base text-stone-600 font-light max-w-2xl mx-auto">
+              {t("gallery.description") || "Discover the essence of our designs through lifestyle moments"}
+            </p>
+          </div>
+
+          {/* Gallery Grid - Portrait Images */}
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4">
             {/* Gallery Item 1 */}
-            <div className="overflow-hidden bg-stone-100">
+            <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-shadow duration-500">
               <img
-                src="https://images.pexels.com/photos/3531173/pexels-photo-3531173.jpeg"
+                src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg"
                 alt="Gallery item 1"
-                className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
 
             {/* Gallery Item 2 */}
-            <div className="overflow-hidden bg-stone-100">
+            <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-shadow duration-500">
               <img
-                src="https://images.pexels.com/photos/3552632/pexels-photo-3552632.jpeg"
+                src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg"
                 alt="Gallery item 2"
-                className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
 
             {/* Gallery Item 3 */}
-            <div className="overflow-hidden bg-stone-100">
+            <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-shadow duration-500">
               <img
-                src="https://images.pexels.com/photos/3531173/pexels-photo-3531173.jpeg"
+                src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg"
                 alt="Gallery item 3"
-                className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
 
             {/* Gallery Item 4 */}
-            <div className="overflow-hidden bg-stone-100">
+            <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-shadow duration-500">
               <img
-                src="https://images.pexels.com/photos/3552632/pexels-photo-3552632.jpeg"
+                src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg"
                 alt="Gallery item 4"
-                className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
 
-            {/* Center Featured Section */}
-            <div className="flex flex-col items-center justify-center bg-stone-50 border border-stone-200 aspect-square sm:aspect-video lg:aspect-square p-8">
-              <div className="text-center space-y-4">
-                <p className="text-xs tracking-widest font-light text-stone-400 uppercase">
-                  {t("gallery.label") || "Inspiration"}
-                </p>
-                <h3 className="text-3xl md:text-4xl font-light text-stone-900 leading-tight">
-                  {t("gallery.title") || "Street Shot"}
-                </h3>
-                <p className="text-sm text-stone-600 font-light max-w-xs">
-                  {t("gallery.description") || "Discover the essence of our designs through lifestyle moments"}
-                </p>
-              </div>
-            </div>
-
-            {/* Gallery Item 6 */}
-            <div className="overflow-hidden bg-stone-100">
+            {/* Gallery Item 5 */}
+            <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-shadow duration-500">
               <img
-                src="https://images.pexels.com/photos/3531173/pexels-photo-3531173.jpeg"
-                alt="Gallery item 6"
-                className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Gallery Item 7 */}
-            <div className="overflow-hidden bg-stone-100">
-              <img
-                src="https://images.pexels.com/photos/3552632/pexels-photo-3552632.jpeg"
-                alt="Gallery item 7"
-                className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Gallery Item 8 */}
-            <div className="overflow-hidden bg-stone-100">
-              <img
-                src="https://images.pexels.com/photos/3531173/pexels-photo-3531173.jpeg"
-                alt="Gallery item 8"
-                className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Gallery Item 9 */}
-            <div className="overflow-hidden bg-stone-100">
-              <img
-                src="https://images.pexels.com/photos/3552632/pexels-photo-3552632.jpeg"
-                alt="Gallery item 9"
-                className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-500"
+                src="https://images.pexels.com/photos/3807512/pexels-photo-3807512.jpeg"
+                alt="Gallery item 5"
+                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
