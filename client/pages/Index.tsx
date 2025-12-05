@@ -483,9 +483,9 @@ export default function Index() {
           </div>
 
           {/* Gallery Grid - Clean Minimal Design */}
-          <div className="space-y-6 md:space-y-8">
+          <div className="space-y-3 md:space-y-4">
             {/* Row 1 - Two Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
               {/* Gallery Item 1 */}
               <div className="flex items-center justify-center">
                 <img
@@ -508,7 +508,7 @@ export default function Index() {
             </div>
 
             {/* Gallery Item New - Below Image 1 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
               <div className="flex items-center justify-center">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fc0ecb85e649643b7a66bfb42bc27b0d9?format=webp&width=800"
@@ -520,7 +520,7 @@ export default function Index() {
             </div>
 
             {/* Row 2 - Three Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
               {/* Gallery Item 3 */}
               <div className="flex items-center justify-center">
                 <img
