@@ -170,7 +170,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Trust Badges Section */}
+      {/* Trust Badges Section - Icons */}
       <section className="py-16 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -372,6 +372,194 @@ export default function Index() {
               >
                 {t("artist.cta")} <ArrowRight size={16} />
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Badges Section - Circular Images */}
+      <section className="py-16 md:py-20 bg-stone-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+            {/* Badge 1 - Cotton */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-32 flex-shrink-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F7f42e97a91164525b5990f1c7159678d?format=webp&width=800"
+                  alt="100% Cotton badge"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div className="space-y-2">
+                <h4 className="text-stone-900 font-light text-base md:text-lg">
+                  {t("trust.cotton")}
+                </h4>
+                <p className="text-stone-600 text-xs md:text-sm font-light leading-relaxed">
+                  {t("trust.cottonDesc")}
+                </p>
+              </div>
+            </div>
+
+            {/* Badge 2 - European Production */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-32 flex-shrink-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fac2b05c61cb84f349eae3429ae30d34c?format=webp&width=800"
+                  alt="Produced in Europe badge"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div className="space-y-2">
+                <h4 className="text-stone-900 font-light text-base md:text-lg">
+                  {t("trust.europeanProduction")}
+                </h4>
+                <p className="text-stone-600 text-xs md:text-sm font-light leading-relaxed">
+                  {t("trust.europeanProductionDesc")}
+                </p>
+              </div>
+            </div>
+
+            {/* Badge 3 - Artist Design */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-32 flex-shrink-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F1cf66f7dd0d64553b7d0311a8f2106e0?format=webp&width=800"
+                  alt="Artist-created design badge"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div className="space-y-2">
+                <h4 className="text-stone-900 font-light text-base md:text-lg">
+                  {t("trust.artistDesign")}
+                </h4>
+                <p className="text-stone-600 text-xs md:text-sm font-light leading-relaxed">
+                  {t("trust.artistDesignDesc")}
+                </p>
+              </div>
+            </div>
+
+            {/* Badge 4 - European Feathers */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-32 flex-shrink-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F1372431f1ff34f848e72687c12dfe264?format=webp&width=800"
+                  alt="European feathers inner pillow badge"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div className="space-y-2">
+                <h4 className="text-stone-900 font-light text-base md:text-lg">
+                  {t("trust.europeanFeathers")}
+                </h4>
+                <p className="text-stone-600 text-xs md:text-sm font-light leading-relaxed">
+                  {t("trust.europeanFeaturesDesc")}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section - Mediterranean Lifestyle */}
+      <section className="py-16 md:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Gallery Header */}
+          <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24 space-y-6">
+            <div>
+              <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
+                {t("gallery.label") || "Lifestyle"}
+              </p>
+              <h2 className="text-4xl md:text-5xl font-light text-stone-900 leading-tight mb-6">
+                {t("gallery.title") || "Experience the Mediterranean"}
+              </h2>
+            </div>
+            <p className="text-base md:text-lg text-stone-600 font-light leading-relaxed">
+              {t("gallery.description") || "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories."}
+            </p>
+          </div>
+
+          {/* Gallery Grid - Clean Minimal Design */}
+          <div className="space-y-3 md:space-y-4">
+            {/* Row 1 - Two Images */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
+              {/* Gallery Item 1 */}
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5a0bebef1a4449d9affa2025f6bea709?format=webp&width=800"
+                  alt="VillaBella lifestyle - Mediterranean tote with pillows"
+                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Gallery Item 2 */}
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fe0d5bce37e904deea60384ee7554be49?format=webp&width=800"
+                  alt="Pillow detail with Mediterranean botanical elements"
+                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Gallery Item New - Below Image 1 */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 -mt-1 md:-mt-2">
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fc0ecb85e649643b7a66bfb42bc27b0d9?format=webp&width=800"
+                  alt="VillaBella tote bag close-up detail"
+                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Row 2 - Three Images */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
+              {/* Gallery Item 3 */}
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fa193a42a0fbb4c7fb74471c62134584f?format=webp&width=800"
+                  alt="VillaBella pillow on elegant rattan furniture"
+                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Gallery Item 4 */}
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F7aea2373f59a4727af61ccb188d9f93a?format=webp&width=800"
+                  alt="VillaBella tote bag in natural Mediterranean setting"
+                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Gallery Item 5 */}
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fcf7951f72fae4e908dfe5d42138e3c44?format=webp&width=800"
+                  alt="Handcrafted pillow details in nature"
+                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Row 3 - Single Image */}
+            <div className="max-w-2xl mx-auto w-full flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5bc8e18dea8c460b93adadfac74f5b53?format=webp&width=800"
+                alt="Premium Mediterranean pillow detail with design"
+                className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
