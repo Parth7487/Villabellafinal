@@ -554,15 +554,6 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Row 3 - Single Image */}
-            <div className="max-w-2xl mx-auto w-full flex items-center justify-center mt-1 md:mt-2">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5bc8e18dea8c460b93adadfac74f5b53?format=webp&width=800"
-                alt="Premium Mediterranean pillow detail with design"
-                className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
-                loading="lazy"
-              />
-            </div>
           </div>
         </div>
       </section>
