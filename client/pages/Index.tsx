@@ -170,7 +170,74 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Trust Badges Section */}
+      {/* Trust Badges Section - Icons */}
+      <section className="py-16 bg-stone-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Badge 1 */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Leaf className="text-stone-100" size={28} />
+                </div>
+              </div>
+              <h4 className="text-stone-900 font-light text-lg">
+                {t("trust.madeInEurope")}
+              </h4>
+              <p className="text-stone-600 text-sm font-light">
+                {t("trust.madeInEuropeDesc")}
+              </p>
+            </div>
+
+            {/* Badge 2 */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <Truck className="text-stone-100" size={28} />
+                </div>
+              </div>
+              <h4 className="text-stone-900 font-light text-lg">
+                {t("trust.delivery")}
+              </h4>
+              <p className="text-stone-600 text-sm font-light">
+                {t("trust.deliveryDesc")}
+              </p>
+            </div>
+
+            {/* Badge 3 */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <RotateCcw className="text-stone-100" size={28} />
+                </div>
+              </div>
+              <h4 className="text-stone-900 font-light text-lg">
+                {t("trust.returns")}
+              </h4>
+              <p className="text-stone-600 text-sm font-light">
+                {t("trust.returnsDesc")}
+              </p>
+            </div>
+
+            {/* Badge 4 */}
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-stone-900 rounded-full flex items-center justify-center border border-stone-700">
+                  <CheckCircle className="text-stone-100" size={28} />
+                </div>
+              </div>
+              <h4 className="text-stone-900 font-light text-lg">
+                {t("trust.norwegianShop")}
+              </h4>
+              <p className="text-stone-600 text-sm font-light">
+                {t("trust.norwegianShopDesc")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Badges Section - Circular Images */}
       <section className="py-16 md:py-20 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
