@@ -60,7 +60,11 @@ const Footer = () => {
                   id="footer-gdpr"
                   checked={footerGdprAccepted}
                   onChange={(e) => setFooterGdprAccepted(e.target.checked)}
-                  className="w-6 h-6 bg-white border-2 border-white rounded cursor-pointer accent-stone-900 flex-shrink-0 ring-2 ring-white ring-offset-2 ring-offset-stone-950"
+                  className={`w-6 h-6 border-2 rounded cursor-pointer flex-shrink-0 ring-2 ring-offset-2 ring-offset-stone-950 transition-colors duration-300 ${
+                    footerGdprAccepted
+                      ? "bg-stone-400 border-stone-400 ring-stone-400 accent-stone-900"
+                      : "bg-white border-white ring-white accent-stone-900"
+                  }`}
                 />
                 <label
                   htmlFor="footer-gdpr"
