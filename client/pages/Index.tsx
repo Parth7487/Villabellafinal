@@ -510,7 +510,7 @@ export default function Index() {
               </div>
 
               {/* Right Column - Gallery Item 2 */}
-              <div className="flex items-center justify-center h-[91.5%]">
+              <div className="flex items-center justify-center h-[89.5%]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fe0d5bce37e904deea60384ee7554be49?format=webp&width=800"
                   alt="Pillow detail with Mediterranean botanical elements"
