@@ -54,24 +54,32 @@ const Footer = () => {
                   {t("footer.subscribe")}
                 </button>
               </div>
-              <div className="flex items-center gap-3 bg-stone-900/50 p-4 rounded-sm border border-stone-800">
-                <input
-                  type="checkbox"
-                  id="footer-gdpr"
-                  checked={footerGdprAccepted}
-                  onChange={(e) => setFooterGdprAccepted(e.target.checked)}
-                  className={`w-6 h-6 border-2 rounded cursor-pointer flex-shrink-0 ring-2 ring-offset-2 ring-offset-stone-950 transition-colors duration-300 ${
-                    footerGdprAccepted
-                      ? "bg-stone-400 border-stone-400 ring-stone-400 accent-stone-900"
-                      : "bg-white border-white ring-white accent-stone-900"
-                  }`}
-                />
-                <label
-                  htmlFor="footer-gdpr"
-                  className="text-sm text-stone-300 font-light cursor-pointer leading-relaxed flex-1"
-                >
-                  {t("newsletter.gdprDescription")}
-                </label>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 bg-stone-800 p-4 rounded-sm border-2 border-stone-700">
+                  <input
+                    type="checkbox"
+                    id="footer-gdpr"
+                    checked={footerGdprAccepted}
+                    onChange={(e) => setFooterGdprAccepted(e.target.checked)}
+                    className="w-6 h-6 cursor-pointer flex-shrink-0 accent-yellow-500"
+                  />
+                  <label
+                    htmlFor="footer-gdpr"
+                    className="text-sm text-stone-200 font-light cursor-pointer leading-relaxed flex-1"
+                  >
+                    {t("newsletter.gdprDescription")}
+                  </label>
+                </div>
+                {!footerGdprAccepted && (
+                  <p className="text-xs text-yellow-500 font-light px-4 py-2 bg-stone-900/50 rounded-sm border border-yellow-500/30">
+                    ✓ Click the checkbox above to enable the Subscribe button
+                  </p>
+                )}
+                {footerGdprAccepted && (
+                  <p className="text-xs text-green-400 font-light px-4 py-2 bg-stone-900/50 rounded-sm border border-green-400/30">
+                    ✓ You're all set! Click Subscribe to join our circle.
+                  </p>
+                )}
               </div>
             </form>
           </div>
