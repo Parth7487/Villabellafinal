@@ -508,7 +508,7 @@ export default function Index() {
             </div>
 
             {/* Gallery Item New - Below Image 1 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 md:gap-1.5 -mt-16 md:-mt-24">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 md:gap-1.5 -mt-32 md:-mt-48">
               <div className="flex items-center justify-center">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fc0ecb85e649643b7a66bfb42bc27b0d9?format=webp&width=800"
