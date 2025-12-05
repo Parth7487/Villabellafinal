@@ -485,7 +485,7 @@ export default function Index() {
           {/* Gallery Grid - Clean Minimal Design */}
           <div className="space-y-3 md:space-y-4">
             {/* Row 1 - Left column (2 stacked images) + Right column (1 tall image) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 md:gap-1.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 md:gap-1.5 auto-rows-fr">
               {/* Left Column - 2 Images Stacked */}
               <div className="flex flex-col gap-1 md:gap-1.5">
                 {/* Gallery Item 1 */}
