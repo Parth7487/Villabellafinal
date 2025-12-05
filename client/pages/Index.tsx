@@ -478,49 +478,51 @@ export default function Index() {
               </h2>
             </div>
             <p className="text-base md:text-lg text-stone-600 font-light leading-relaxed">
-              {t("gallery.description") || "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories."}
+              {t("gallery.description") ||
+                "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories."}
             </p>
           </div>
 
           {/* Gallery Grid - Clean Minimal Design */}
-          <div className="space-y-3 md:space-y-4">
-            {/* Row 1 - Two Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
-              {/* Gallery Item 1 */}
-              <div className="flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5a0bebef1a4449d9affa2025f6bea709?format=webp&width=800"
-                  alt="VillaBella lifestyle - Mediterranean tote with pillows"
-                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
-                  loading="lazy"
-                />
+          <div className="space-y-0">
+            {/* Row 1 - Left column (2 stacked images) + Right column (1 tall image) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 md:gap-1.5 items-stretch">
+              {/* Left Column - 2 Images Stacked */}
+              <div className="flex flex-col gap-1 md:gap-1.5">
+                {/* Gallery Item 1 */}
+                <div className="flex items-center justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5a0bebef1a4449d9affa2025f6bea709?format=webp&width=800"
+                    alt="VillaBella lifestyle - Mediterranean tote with pillows"
+                    className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Gallery Item 3 (Tote bag close-up - moved here) */}
+                <div className="flex items-center justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fc0ecb85e649643b7a66bfb42bc27b0d9?format=webp&width=800"
+                    alt="VillaBella tote bag close-up detail"
+                    className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
-              {/* Gallery Item 2 */}
-              <div className="flex items-center justify-center">
+              {/* Right Column - Gallery Item 2 */}
+              <div className="flex items-center justify-center h-[89.5%]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fe0d5bce37e904deea60384ee7554be49?format=webp&width=800"
                   alt="Pillow detail with Mediterranean botanical elements"
-                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            {/* Gallery Item New - Below Image 1 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 -mt-1 md:-mt-2">
-              <div className="flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fc0ecb85e649643b7a66bfb42bc27b0d9?format=webp&width=800"
-                  alt="VillaBella tote bag close-up detail"
-                  className="max-w-full h-auto object-contain hover:opacity-90 transition-opacity duration-700"
+                  className="w-full h-full object-cover hover:opacity-90 transition-opacity duration-700"
                   loading="lazy"
                 />
               </div>
             </div>
 
             {/* Row 2 - Three Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-1.5 -mt-12 md:-mt-[160px]">
               {/* Gallery Item 3 */}
               <div className="flex items-center justify-center">
                 <img
@@ -553,7 +555,7 @@ export default function Index() {
             </div>
 
             {/* Row 3 - Single Image */}
-            <div className="max-w-2xl mx-auto w-full flex items-center justify-center">
+            <div className="max-w-2xl mx-auto w-full flex items-center justify-center mt-1 md:mt-2">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5bc8e18dea8c460b93adadfac74f5b53?format=webp&width=800"
                 alt="Premium Mediterranean pillow detail with design"
