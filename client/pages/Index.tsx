@@ -465,83 +465,103 @@ export default function Index() {
       </section>
 
       {/* Gallery Section - Mediterranean Lifestyle */}
-      <section className="py-20 md:py-32 bg-stone-50">
+      <section className="py-16 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Gallery Header */}
-          <div className="max-w-3xl mx-auto text-center mb-20 space-y-6">
+          <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24 space-y-6">
             <div>
-              <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-4">
                 {t("gallery.label") || "Lifestyle"}
               </p>
-              <h2 className="text-5xl md:text-6xl font-light text-stone-900 leading-tight mb-6">
+              <h2 className="text-4xl md:text-5xl font-light text-stone-900 leading-tight mb-6">
                 {t("gallery.title") || "Experience the Mediterranean"}
               </h2>
             </div>
-            <p className="text-lg text-stone-600 font-light leading-relaxed">
+            <p className="text-base md:text-lg text-stone-600 font-light leading-relaxed">
               {t("gallery.description") || "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories."}
             </p>
           </div>
 
-          {/* Gallery Grid - Elegant Layout with Mixed Sizes */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 auto-rows-max">
-            {/* Gallery Item 1 - Large Item */}
-            <div className="sm:col-span-1 lg:row-span-2 overflow-hidden rounded-lg bg-stone-100 shadow-md hover:shadow-2xl transition-all duration-500 group">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5a0bebef1a4449d9affa2025f6bea709?format=webp&width=800"
-                alt="VillaBella lifestyle - Mediterranean tote with pillows"
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 aspect-[3/4]"
-                loading="lazy"
-              />
+          {/* Gallery Grid - Responsive with Full Image Visibility */}
+          <div className="space-y-6">
+            {/* Row 1 - Two Images */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+              {/* Gallery Item 1 */}
+              <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="bg-stone-50 flex items-center justify-center min-h-80 md:min-h-96">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5a0bebef1a4449d9affa2025f6bea709?format=webp&width=800"
+                    alt="VillaBella lifestyle - Mediterranean tote with pillows"
+                    className="max-w-full max-h-96 md:max-h-[500px] object-contain hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              {/* Gallery Item 2 */}
+              <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="bg-stone-50 flex items-center justify-center min-h-80 md:min-h-96">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fe0d5bce37e904deea60384ee7554be49?format=webp&width=800"
+                    alt="Pillow detail with Mediterranean botanical elements"
+                    className="max-w-full max-h-96 md:max-h-[500px] object-contain hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
 
-            {/* Gallery Item 2 */}
-            <div className="overflow-hidden rounded-lg bg-stone-100 shadow-md hover:shadow-2xl transition-all duration-500 group">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fe0d5bce37e904deea60384ee7554be49?format=webp&width=800"
-                alt="Pillow detail with Mediterranean botanical elements"
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 aspect-[3/4]"
-                loading="lazy"
-              />
+            {/* Row 2 - Three Images */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              {/* Gallery Item 3 */}
+              <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="bg-stone-50 flex items-center justify-center min-h-72 md:min-h-80">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fa193a42a0fbb4c7fb74471c62134584f?format=webp&width=800"
+                    alt="VillaBella pillow on elegant rattan furniture"
+                    className="max-w-full max-h-80 md:max-h-96 object-contain hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              {/* Gallery Item 4 */}
+              <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="bg-stone-50 flex items-center justify-center min-h-72 md:min-h-80">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F7aea2373f59a4727af61ccb188d9f93a?format=webp&width=800"
+                    alt="VillaBella tote bag in natural Mediterranean setting"
+                    className="max-w-full max-h-80 md:max-h-96 object-contain hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              {/* Gallery Item 5 */}
+              <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="bg-stone-50 flex items-center justify-center min-h-72 md:min-h-80">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fcf7951f72fae4e908dfe5d42138e3c44?format=webp&width=800"
+                    alt="Handcrafted pillow details in nature"
+                    className="max-w-full max-h-80 md:max-h-96 object-contain hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
 
-            {/* Gallery Item 3 */}
-            <div className="overflow-hidden rounded-lg bg-stone-100 shadow-md hover:shadow-2xl transition-all duration-500 group">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fa193a42a0fbb4c7fb74471c62134584f?format=webp&width=800"
-                alt="VillaBella pillow on elegant rattan furniture"
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 aspect-[3/4]"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Gallery Item 4 */}
-            <div className="overflow-hidden rounded-lg bg-stone-100 shadow-md hover:shadow-2xl transition-all duration-500 group">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F7aea2373f59a4727af61ccb188d9f93a?format=webp&width=800"
-                alt="VillaBella tote bag in natural Mediterranean setting"
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 aspect-[3/4]"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Gallery Item 5 */}
-            <div className="sm:col-span-1 lg:col-span-1 overflow-hidden rounded-lg bg-stone-100 shadow-md hover:shadow-2xl transition-all duration-500 group">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fcf7951f72fae4e908dfe5d42138e3c44?format=webp&width=800"
-                alt="Handcrafted pillow details in nature"
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 aspect-[3/4]"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Gallery Item 6 - Large Item */}
-            <div className="sm:col-span-1 lg:row-span-2 overflow-hidden rounded-lg bg-stone-100 shadow-md hover:shadow-2xl transition-all duration-500 group">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5bc8e18dea8c460b93adadfac74f5b53?format=webp&width=800"
-                alt="Premium Mediterranean pillow detail with design"
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 aspect-[3/4]"
-                loading="lazy"
-              />
+            {/* Row 3 - Single Image */}
+            <div className="max-w-2xl mx-auto w-full">
+              <div className="overflow-hidden rounded-lg bg-stone-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="bg-stone-50 flex items-center justify-center min-h-80 md:min-h-96">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F5bc8e18dea8c460b93adadfac74f5b53?format=webp&width=800"
+                    alt="Premium Mediterranean pillow detail with design"
+                    className="max-w-full max-h-96 md:max-h-[500px] object-contain hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
