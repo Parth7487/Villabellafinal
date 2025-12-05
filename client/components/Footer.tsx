@@ -54,20 +54,32 @@ const Footer = () => {
                   {t("footer.subscribe")}
                 </button>
               </div>
-              <div className="flex items-start gap-3">
-                <input
-                  type="checkbox"
-                  id="footer-gdpr"
-                  checked={footerGdprAccepted}
-                  onChange={(e) => setFooterGdprAccepted(e.target.checked)}
-                  className="w-5 h-5 mt-0.5 bg-white border-2 border-stone-300 rounded cursor-pointer accent-stone-900 flex-shrink-0"
-                />
-                <label
-                  htmlFor="footer-gdpr"
-                  className="text-sm text-stone-300 font-light cursor-pointer leading-relaxed"
-                >
-                  {t("newsletter.gdprDescription")}
-                </label>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 bg-stone-800 p-4 rounded-sm border-2 border-stone-700">
+                  <input
+                    type="checkbox"
+                    id="footer-gdpr"
+                    checked={footerGdprAccepted}
+                    onChange={(e) => setFooterGdprAccepted(e.target.checked)}
+                    className="w-6 h-6 cursor-pointer flex-shrink-0 accent-yellow-500"
+                  />
+                  <label
+                    htmlFor="footer-gdpr"
+                    className="text-sm text-stone-200 font-light cursor-pointer leading-relaxed flex-1"
+                  >
+                    {t("newsletter.gdprDescription")}
+                  </label>
+                </div>
+                {!footerGdprAccepted && (
+                  <p className="text-xs text-yellow-500 font-light px-4 py-2 bg-stone-900/50 rounded-sm border border-yellow-500/30">
+                    ✓ Click the checkbox above to enable the Subscribe button
+                  </p>
+                )}
+                {footerGdprAccepted && (
+                  <p className="text-xs text-green-400 font-light px-4 py-2 bg-stone-900/50 rounded-sm border border-green-400/30">
+                    ✓ You're all set! Click Subscribe to join our circle.
+                  </p>
+                )}
               </div>
             </form>
           </div>
