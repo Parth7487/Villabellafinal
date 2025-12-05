@@ -174,6 +174,9 @@ const translations: Record<Language, Record<string, string>> = {
     "trust.artistDesignDesc": "Originale design fra dyktig mosaikkkünstner",
     "trust.europeanFeathers": "Europeisk Andefjær",
     "trust.europeanFeaturesDesc": "Premium innerpute for maksimal komfort",
+    "gallery.label": "Inspirasjon",
+    "gallery.title": "Street Shot",
+    "gallery.description": "Oppdag essensen av våre design gjennom livsstilsmomenter",
     "products.whyChoose": "Hvorfor Velge VillaBella",
     "products.whyChooseDesc":
       "Vi garanterer kvalitet, rask levering og din fullstendige tilfredshet",
@@ -436,6 +439,9 @@ const translations: Record<Language, Record<string, string>> = {
     "trust.artistDesignDesc": "Original designs from skilled mosaic artist",
     "trust.europeanFeathers": "European Feathers",
     "trust.europeanFeaturesDesc": "Premium inner pillow for maximum comfort",
+    "gallery.label": "Inspiration",
+    "gallery.title": "Street Shot",
+    "gallery.description": "Discover the essence of our designs through lifestyle moments",
     "products.whyChoose": "Why Choose VillaBella",
     "products.whyChooseDesc":
       "We guarantee quality, fast delivery and your complete satisfaction",
