@@ -37,7 +37,7 @@ const Footer = () => {
               }}
               className="space-y-4"
             >
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-3">
                 <input
                   type="email"
                   value={footerEmail}
@@ -45,13 +45,6 @@ const Footer = () => {
                   placeholder={t("footer.emailPlaceholder")}
                   required
                   className="flex-1 px-5 py-3 bg-stone-900 text-white placeholder-stone-500 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-stone-600 transition"
-                />
-                <input
-                  type="checkbox"
-                  id="footer-gdpr"
-                  checked={footerGdprAccepted}
-                  onChange={(e) => setFooterGdprAccepted(e.target.checked)}
-                  className="w-5 h-5 bg-white border-2 border-white rounded cursor-pointer accent-stone-900 flex-shrink-0 ring-2 ring-white ring-offset-2 ring-offset-stone-950"
                 />
                 <button
                   type="submit"
@@ -61,10 +54,17 @@ const Footer = () => {
                   {t("footer.subscribe")}
                 </button>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-center gap-3 bg-stone-900/50 p-4 rounded-sm border border-stone-800">
+                <input
+                  type="checkbox"
+                  id="footer-gdpr"
+                  checked={footerGdprAccepted}
+                  onChange={(e) => setFooterGdprAccepted(e.target.checked)}
+                  className="w-6 h-6 bg-white border-2 border-white rounded cursor-pointer accent-stone-900 flex-shrink-0 ring-2 ring-white ring-offset-2 ring-offset-stone-950"
+                />
                 <label
                   htmlFor="footer-gdpr"
-                  className="text-sm text-stone-300 font-light cursor-pointer leading-relaxed"
+                  className="text-sm text-stone-300 font-light cursor-pointer leading-relaxed flex-1"
                 >
                   {t("newsletter.gdprDescription")}
                 </label>
